@@ -1,0 +1,58 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: gameiq-postgres
+    environment:
+      POSTGRES_DB: gameiq_db                    # Match .env
+      POSTGRES_USER: gameiq_user               # Match .env  
+      POSTGRES_PASSWORD: gameiq_dev_pass       # Match .env (was gameiq_password)
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - gameiq-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gameiq_user -d gameiq_db"]  # Updated to match
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: gameiq-backend
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=gameiq_db                       # Match .env
+      - DB_USER=gameiq_user                     # Match .env
+      - DB_PASSWORD=gameiq_dev_pass             # Match .env
+      - CLAUDE_API_KEY=${CLAUDE_API_KEY}
+      - YOUTUBE_API_KEY=${YOUTUBE_API_KEY}
+      - FACEBOOK_CLIENT_ID=${FACEBOOK_CLIENT_ID}
+      - FACEBOOK_CLIENT_SECRET=${FACEBOOK_CLIENT_SECRET}
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - gameiq-network
+    volumes:
+      - ./:/app                                 # Mount current directory
+      - gradle_cache:/home/gradle/.gradle
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  gradle_cache:
+
+networks:
+  gameiq-network:
+    driver: bridge
