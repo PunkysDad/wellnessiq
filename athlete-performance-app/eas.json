@@ -1,0 +1,59 @@
+{
+  "cli": {
+    "version": ">= 3.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "image": "ubuntu-22.04-jdk-17-ndk-r26b"
+      },
+      "ios": {
+        "image": "latest"
+      }
+    },
+    "preview": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "http://192.168.254.5:8080",
+        "EXPO_PUBLIC_FIREBASE_API_KEY": "AIzaSyAOuvLI7rp5jPzLVgKk2ckh84UHgO8ZGb8",
+        "EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN": "wellnessiq-92112.firebaseapp.com",
+        "EXPO_PUBLIC_FIREBASE_PROJECT_ID": "wellnessiq-92112",
+        "EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET": "wellnessiq-92112.firebasestorage.app",
+        "EXPO_PUBLIC_REVENUECAT_API_KEY_IOS": "appl_ItZMizSmlEvpGLmgHILBweRaOQt",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "413016117016-epu1hr99s6055cfhjl11tcdbc667j2q8.apps.googleusercontent.com",
+        "EXPO_PUBLIC_REVENUECAT_API_KEY_ANDROID": "goog_SzGmqADxwdbVYImMsCAgNSBOVzJ"
+      },
+      "android": {
+        "image": "ubuntu-22.04-jdk-17-ndk-r26b"
+      },
+      "ios": {
+        "image": "latest"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api.sportsiqapp.info",
+        "EXPO_PUBLIC_FIREBASE_API_KEY": "AIzaSyDfnrY68FW1Qz9awIrnZoDbOCBvXVpIcBU",
+        "EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN": "wellnessiq-92112.firebaseapp.com",
+        "EXPO_PUBLIC_FIREBASE_PROJECT_ID": "wellnessiq-92112",
+        "EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET": "wellnessiq-92112.firebasestorage.app",
+        "EXPO_PUBLIC_REVENUECAT_API_KEY_IOS": "appl_ItZMizSmlEvpGLmgHILBweRaOQt",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "413016117016-epu1hr99s6055cfhjl11tcdbc667j2q8.apps.googleusercontent.com",
+        "EXPO_PUBLIC_REVENUECAT_API_KEY_ANDROID": "goog_SzGmqADxwdbVYImMsCAgNSBOVzJ"
+      },
+      "android": {
+        "image": "ubuntu-22.04-jdk-17-ndk-r26b"
+      },
+      "ios": {
+        "image": "latest",
+        "autoIncrement": true
+      }
+    },
+  "submit": {
+    "production": {}
+  }
+}

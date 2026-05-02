@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "413016117016",
+    "project_id": "gameiq-37d8d",
+    "storage_bucket": "gameiq-37d8d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413016117016:android:70bdd96f579dcf8e30d86d",
+        "android_client_info": {
+          "package_name": "com.justinbooth.gameiq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413016117016-epu1hr99s6055cfhjl11tcdbc667j2q8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACLc7BRZh3bHIZsgzp5LEq537xxetSVnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413016117016-epu1hr99s6055cfhjl11tcdbc667j2q8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "413016117016-mt8rq2cjaenq5qn3meek9s228sipf16j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.justinbooth.gameiq"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

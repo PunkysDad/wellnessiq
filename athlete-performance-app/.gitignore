@@ -1,0 +1,32 @@
+# Environment Variables (NEVER COMMIT)
+.env
+.env.local
+.env.development
+.env.production
+
+# Claude Code
+CLAUDE.md
+
+# Build artifacts
+node_modules/
+.expo/
+dist/
+.next/
+.DS_Store
+
+# IDE files  
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock

@@ -1,0 +1,501 @@
+{
+  "position": "point-guard",
+  "sport": "basketball",
+  "categories": {
+    "pick-and-roll-reads": {
+      "description": "Reading hedge, switch, ice, drop coverage and making correct decisions",
+      "questions": [
+        {
+          "id": "pg_pickroll_001",
+          "scenario": "You're running a pick-and-roll with your center. The defender guarding your screener steps out hard to hedge and trap you above the 3-point line.",
+          "question": "What's your best decision?",
+          "options": [
+            {"id": "A", "text": "Split the hedge and attack the rim"},
+            {"id": "B", "text": "Back up and reset the play"},
+            {"id": "C", "text": "Pass to your rolling center immediately"},
+            {"id": "D", "text": "Look for the open teammate on the weak side"}
+          ],
+          "correct": "C",
+          "explanation": "When the big hedges hard, your screener should be rolling wide open to the rim with his defender out of position. This is a 4-on-3 situation - get the ball to the roller quickly before help defense can recover.",
+          "difficulty": "intermediate",
+          "tags": ["hedge-defense", "pick-and-roll", "4-on-3", "roll-pass"]
+        },
+        {
+          "id": "pg_pickroll_002",
+          "scenario": "The defense switches the pick-and-roll, putting a smaller defender on your big man and their big on you.",
+          "question": "How should you exploit this mismatch?",
+          "options": [
+            {"id": "A", "text": "Immediately post up your big man with the smaller defender"},
+            {"id": "B", "text": "Attack the bigger defender guarding you"},
+            {"id": "C", "text": "Look for a quick pass to your big in the post"},
+            {"id": "D", "text": "Reset and run another pick-and-roll"}
+          ],
+          "correct": "C",
+          "explanation": "When they switch, get the ball to your big man quickly in good post position before help defense can come. The size mismatch in the post is usually easier to exploit than trying to beat a big man off the dribble.",
+          "difficulty": "beginner",
+          "tags": ["switch-defense", "mismatch", "post-feed", "size-advantage"]
+        },
+        {
+          "id": "pg_pickroll_003",
+          "scenario": "You run pick-and-roll, and the defense 'ices' you by forcing you to the sideline while the big drops back to protect the paint.",
+          "question": "What's your best counter to this coverage?",
+          "options": [
+            {"id": "A", "text": "Take the contested 3-pointer from the sideline"},
+            {"id": "B", "text": "Drive hard to the baseline"},
+            {"id": "C", "text": "Hit your screener popping to the mid-range area"},
+            {"id": "D", "text": "Reject the screen and attack the other way"}
+          ],
+          "correct": "D",
+          "explanation": "Ice coverage is designed to force you into a low-percentage shot on the sideline. The best counter is to reject the screen and attack the opposite direction where you have more space and better angles.",
+          "difficulty": "advanced",
+          "tags": ["ice-coverage", "sideline-force", "reject-screen", "space-creation"]
+        },
+        {
+          "id": "pg_pickroll_004",
+          "scenario": "Your screener sets a pick and the defense drops the big man back to protect the rim while your defender fights over the top.",
+          "question": "What opportunity does this create?",
+          "options": [
+            {"id": "A", "text": "Drive hard to the rim past the dropping big"},
+            {"id": "B", "text": "Take the open mid-range pull-up jumper"},
+            {"id": "C", "text": "Pass to your rolling big man"},
+            {"id": "D", "text": "Look for the skip pass to the weak side"}
+          ],
+          "correct": "B",
+          "explanation": "Drop coverage gives you the mid-range pull-up jumper. The big is protecting the rim, your defender is fighting over the screen - you have a clean look from 15-18 feet. Take the shot the defense is giving you.",
+          "difficulty": "intermediate",
+          "tags": ["drop-coverage", "mid-range", "pull-up-jumper", "open-shot"]
+        },
+        {
+          "id": "pg_pickroll_005",
+          "scenario": "You're running pick-and-roll and notice the help defender cheating over early to stop your drive, leaving his man open in the corner.",
+          "question": "What's your read?",
+          "options": [
+            {"id": "A", "text": "Continue with your drive since you saw it first"},
+            {"id": "B", "text": "Make the skip pass to the open corner shooter"},
+            {"id": "C", "text": "Pull back and look for your rolling big"},
+            {"id": "D", "text": "Call for a different screen"}
+          ],
+          "correct": "B",
+          "explanation": "When help defense rotates early, the skip pass to the open shooter is usually the highest percentage play. Corner 3-pointers are great shots, and the early help means your teammate should be wide open.",
+          "difficulty": "advanced",
+          "tags": ["help-defense", "early-rotation", "skip-pass", "corner-three"]
+        },
+        {
+          "id": "pg_pickroll_006",
+          "scenario": "Running a side pick-and-roll near the free-throw line extended. The defense shows two defenders coming at you (your man and the screener's man).",
+          "question": "What's happening and how do you react?",
+          "options": [
+            {"id": "A", "text": "It's a trap - look for the open man immediately"},
+            {"id": "B", "text": "Split between the two defenders"},
+            {"id": "C", "text": "Dribble back out to reset"},
+            {"id": "D", "text": "Force a shot over the defense"}
+          ],
+          "correct": "A",
+          "explanation": "When two defenders commit to you in pick-and-roll, it creates a 4-on-3 advantage for your team. Don't fight the trap - find the open teammate quickly. Someone will be wide open.",
+          "difficulty": "intermediate",
+          "tags": ["trap-defense", "two-on-ball", "4-on-3", "find-open-man"]
+        }
+      ]
+    },
+    "half-court-offense": {
+      "description": "Reading defenses, creating spacing, ball movement, and offensive flow",
+      "questions": [
+        {
+          "id": "pg_halfcourt_001",
+          "scenario": "You bring the ball up court and see your team bunched together on one side, with poor spacing.",
+          "question": "What's your first priority?",
+          "options": [
+            {"id": "A", "text": "Call a timeout to reset"},
+            {"id": "B", "text": "Drive to the rim immediately"},
+            {"id": "C", "text": "Organize your teammates into proper spacing"},
+            {"id": "D", "text": "Look for a quick shot before defense adjusts"}
+          ],
+          "correct": "C",
+          "explanation": "As the point guard, you're the floor general. Poor spacing leads to easy help defense and turnovers. Use your voice and gestures to spread the floor and create proper spacing before initiating offense.",
+          "difficulty": "beginner",
+          "tags": ["floor-general", "spacing", "team-organization", "leadership"]
+        },
+        {
+          "id": "pg_halfcourt_002",
+          "scenario": "Your team is in a 4-out, 1-in set. The defense is sagging off your teammates to help on drives, but your shooters are good 3-point threats.",
+          "question": "How do you exploit this defensive strategy?",
+          "options": [
+            {"id": "A", "text": "Keep driving since they're giving you the lane"},
+            {"id": "B", "text": "Make the extra pass to kick out for 3-pointers"},
+            {"id": "C", "text": "Post up your big man since they're helping off him"},
+            {"id": "D", "text": "Call for screens to create better driving lanes"}
+          ],
+          "correct": "B",
+          "explanation": "If the defense is helping off good shooters, make them pay. Drive and kick to your open shooters for 3-pointers. Force the defense to choose: help and give up threes, or stay home and let you drive.",
+          "difficulty": "intermediate",
+          "tags": ["4-out-1-in", "help-defense", "drive-and-kick", "shooter-spacing"]
+        },
+        {
+          "id": "pg_halfcourt_003",
+          "scenario": "The shot clock is winding down (under 10 seconds), and your offense hasn't generated a good look yet.",
+          "question": "What's your responsibility as the point guard?",
+          "options": [
+            {"id": "A", "text": "Get the ball to your best scorer and let him create"},
+            {"id": "B", "text": "Take the shot yourself - it's your job"},
+            {"id": "C", "text": "Call a quick screen to create something"},
+            {"id": "D", "text": "Look for any available shot to avoid the shot clock violation"}
+          ],
+          "correct": "A",
+          "explanation": "With the shot clock running down, get the ball to your best shot creator in a position where he can score. Don't force a bad shot yourself - your job is to get the best scorer the best opportunity possible.",
+          "difficulty": "intermediate",
+          "tags": ["shot-clock", "late-clock", "best-scorer", "create-opportunity"]
+        },
+        {
+          "id": "pg_halfcourt_004",
+          "scenario": "You notice the defense is in a 2-3 zone. Your team has good outside shooters and a skilled post player.",
+          "question": "What's the most effective way to attack this zone?",
+          "options": [
+            {"id": "A", "text": "Feed the post immediately"},
+            {"id": "B", "text": "Swing the ball side to side to find open shots"},
+            {"id": "C", "text": "Attack the high post/free throw line area"},
+            {"id": "D", "text": "Drive into the gaps of the zone"}
+          ],
+          "correct": "C",
+          "explanation": "The high post is the weak spot in a 2-3 zone. Get the ball to the free throw line area - this forces the zone to collapse and creates open shots on the perimeter or easy passes inside.",
+          "difficulty": "advanced",
+          "tags": ["2-3-zone", "high-post", "zone-weakness", "free-throw-line"]
+        },
+        {
+          "id": "pg_halfcourt_005",
+          "scenario": "Your team is up by 15 points with 8 minutes left. The defense is pressing and trying to create chaos.",
+          "question": "How should you manage the offense?",
+          "options": [
+            {"id": "A", "text": "Push the pace to extend the lead"},
+            {"id": "B", "text": "Slow down and run clock"},
+            {"id": "C", "text": "Keep running your normal offense"},
+            {"id": "D", "text": "Look for quick shots to put the game away"}
+          ],
+          "correct": "C",
+          "explanation": "Don't let the defense dictate how you play. With a big lead and time left, stick to your normal offense. Take good shots when they come, but don't change your approach just because they're pressing.",
+          "difficulty": "advanced",
+          "tags": ["game-management", "big-lead", "pressure-defense", "stay-composed"]
+        }
+      ]
+    },
+    "defensive-recognition": {
+      "description": "Identifying zone vs man, help positioning, rotations, and defensive adjustments",
+      "questions": [
+        {
+          "id": "pg_defense_001",
+          "scenario": "At the start of a possession, you want to quickly determine if the defense is in man-to-man or zone coverage.",
+          "question": "What's the best way to identify the defensive scheme?",
+          "options": [
+            {"id": "A", "text": "Look at how defenders guard the post player"},
+            {"id": "B", "text": "Motion a player across the court and see if his defender follows"},
+            {"id": "C", "text": "Drive to see how the help defense reacts"},
+            {"id": "D", "text": "Look at the initial defensive alignment"}
+          ],
+          "correct": "B",
+          "explanation": "Motion is the quickest and most reliable way to identify coverage. If the defender follows the motion, it's man-to-man. If he stays in his area while another defender picks up the motion, it's zone coverage.",
+          "difficulty": "beginner",
+          "tags": ["motion-read", "man-vs-zone", "coverage-identification", "quick-read"]
+        },
+        {
+          "id": "pg_defense_002",
+          "scenario": "You're driving to the basket and see the help defender starting to rotate over from the weak side.",
+          "question": "What should you be thinking?",
+          "options": [
+            {"id": "A", "text": "Challenge the help and try to score through contact"},
+            {"id": "B", "text": "Pull up for a mid-range jumper"},
+            {"id": "C", "text": "Find the open teammate that the help left behind"},
+            {"id": "D", "text": "Continue driving and see what happens"}
+          ],
+          "correct": "C",
+          "explanation": "When help defense comes, someone is getting left open. As the point guard, find that open player and get him the ball. Don't fight the help - use it to create advantages for your teammates.",
+          "difficulty": "intermediate",
+          "tags": ["help-defense", "weak-side", "find-open-man", "advantage-creation"]
+        },
+        {
+          "id": "pg_defense_003",
+          "scenario": "The defense is switching everything - all screens, all cuts, all off-ball movement.",
+          "question": "How do you exploit a switching defense?",
+          "options": [
+            {"id": "A", "text": "Look for size mismatches after switches"},
+            {"id": "B", "text": "Set more screens to create confusion"},
+            {"id": "C", "text": "Isolate one-on-one since they're switching"},
+            {"id": "D", "text": "Move the ball quickly before they can switch"}
+          ],
+          "correct": "A",
+          "explanation": "Switching creates mismatches. Look for bigs guarding guards (speed advantage) or guards guarding bigs (size advantage). Find these mismatches quickly and exploit them before help can arrive.",
+          "difficulty": "intermediate",
+          "tags": ["switching-defense", "mismatches", "size-advantage", "speed-advantage"]
+        },
+        {
+          "id": "pg_defense_004",
+          "scenario": "You notice the defense is 'showing' on every screen - having the screener's defender step out briefly then recover.",
+          "question": "What does this tell you about their defensive strategy?",
+          "options": [
+            {"id": "A", "text": "They're trying to force tough shots"},
+            {"id": "B", "text": "They want to disrupt your timing without fully committing"},
+            {"id": "C", "text": "They're setting up for a steal"},
+            {"id": "D", "text": "They're in a zone defense"}
+          ],
+          "correct": "B",
+          "explanation": "Showing is a technique to disrupt the ball handler without fully committing to a hedge or switch. They want to slow you down and make you hesitate, but they're not fully stopping your penetration.",
+          "difficulty": "advanced",
+          "tags": ["show-defense", "timing-disruption", "soft-help", "hesitation-creation"]
+        },
+        {
+          "id": "pg_defense_005",
+          "scenario": "The defense is playing 'pack line' - staying close to the paint and giving you outside shots but taking away drives.",
+          "question": "What's the best way to attack this defensive system?",
+          "options": [
+            {"id": "A", "text": "Take the outside shots they're giving you"},
+            {"id": "B", "text": "Try to drive anyway - be aggressive"},
+            {"id": "C", "text": "Work the ball inside through the post"},
+            {"id": "D", "text": "Use ball screens to create driving lanes"}
+          ],
+          "correct": "A",
+          "explanation": "Pack line defense is designed to take away easy baskets at the rim. If you and your teammates can knock down outside shots, the defense will have to extend and give you driving lanes. Make them pay for the space they're giving you.",
+          "difficulty": "advanced",
+          "tags": ["pack-line", "outside-shots", "spacing-discipline", "rim-protection"]
+        }
+      ]
+    },
+    "fast-break-decisions": {
+      "description": "Reading numbers advantage, trailer reads, pull-up timing, and transition offense",
+      "questions": [
+        {
+          "id": "pg_fastbreak_001",
+          "scenario": "You secure a defensive rebound and see a 3-on-2 fast break opportunity developing.",
+          "question": "What's your primary focus pushing the ball up court?",
+          "options": [
+            {"id": "A", "text": "Get to the rim as fast as possible"},
+            {"id": "B", "text": "Look for the earliest scoring opportunity"},
+            {"id": "C", "text": "Control the pace and make the right read"},
+            {"id": "D", "text": "Get the ball to your fastest player"}
+          ],
+          "correct": "C",
+          "explanation": "In transition, don't rush. Control the pace, read the defense, and make the right play. A 3-on-2 should result in a good shot - either at the rim or a wide-open 3-pointer. Be patient and make the defense commit first.",
+          "difficulty": "intermediate",
+          "tags": ["3-on-2", "transition-control", "pace-management", "read-defense"]
+        },
+        {
+          "id": "pg_fastbreak_002",
+          "scenario": "You're leading a 2-on-1 fast break. The lone defender is backing up and protecting the paint.",
+          "question": "What's your best decision?",
+          "options": [
+            {"id": "A", "text": "Attack the rim and try to score through contact"},
+            {"id": "B", "text": "Pull up for an open 3-pointer"},
+            {"id": "C", "text": "Draw the defender and pass to your teammate"},
+            {"id": "D", "text": "Slow down and wait for more help to arrive"}
+          ],
+          "correct": "C",
+          "explanation": "In a 2-on-1, force the defender to make a choice. Attack him directly to make him commit, then pass to your open teammate for an easy score. Don't settle for a contested shot when you have a numbers advantage.",
+          "difficulty": "beginner",
+          "tags": ["2-on-1", "force-commitment", "numbers-advantage", "easy-basket"]
+        },
+        {
+          "id": "pg_fastbreak_003",
+          "scenario": "You're pushing the ball in transition when you notice a trailing big man filling the lane behind you.",
+          "question": "How does this trailer affect your decision-making?",
+          "options": [
+            {"id": "A", "text": "It doesn't - focus on the players ahead of you"},
+            {"id": "B", "text": "Look for him if the initial break doesn't develop"},
+            {"id": "C", "text": "Pass back to him immediately for a 3-pointer"},
+            {"id": "D", "text": "Slow down so he can catch up"}
+          ],
+          "correct": "B",
+          "explanation": "The trailer is your safety valve. If the initial fast break opportunity doesn't materialize (defenders get back, passing lanes are covered), the trailing big man often has an open shot or good post position.",
+          "difficulty": "advanced",
+          "tags": ["trailer", "safety-valve", "secondary-break", "big-man-spot"]
+        },
+        {
+          "id": "pg_fastbreak_004",
+          "scenario": "You have a clear path to the basket in transition, but you notice a defender sprinting back who might challenge your shot.",
+          "question": "What factors should influence your decision to shoot or pass?",
+          "options": [
+            {"id": "A", "text": "Always take the layup - you got there first"},
+            {"id": "B", "text": "Your shooting ability vs. the defender's shot-blocking ability"},
+            {"id": "C", "text": "Whether your teammates are in position for a rebound"},
+            {"id": "D", "text": "How much the game situation matters (score, time)"}
+          ],
+          "correct": "B",
+          "explanation": "Assess the matchup. If you're confident in finishing through contact or the defender isn't a strong shot blocker, take the layup. If he's a rim protector and you have open teammates, make the pass for a better shot.",
+          "difficulty": "advanced",
+          "tags": ["layup-vs-pass", "rim-protection", "matchup-assessment", "shot-selection"]
+        },
+        {
+          "id": "pg_fastbreak_005",
+          "scenario": "The fast break opportunity breaks down, but you still have 4-5 seconds of transition offense before the defense gets fully set.",
+          "question": "What's your approach in this 'secondary break' situation?",
+          "options": [
+            {"id": "A", "text": "Pull the ball out and set up half-court offense"},
+            {"id": "B", "text": "Look for quick ball movement to find an open shot"},
+            {"id": "C", "text": "Drive immediately before help defense arrives"},
+            {"id": "D", "text": "Call a play to organize your teammates"}
+          ],
+          "correct": "B",
+          "explanation": "In secondary break, the defense isn't fully organized yet. Move the ball quickly to find the open shot - often a 3-pointer or mid-range jumper. Don't waste the advantage by slowing down, but don't force a bad shot either.",
+          "difficulty": "intermediate",
+          "tags": ["secondary-break", "quick-ball-movement", "defense-not-set", "organized-offense"]
+        }
+      ]
+    },
+    "clock-management": {
+      "description": "Shot clock awareness, end-of-quarter scenarios, and game situation management",
+      "questions": [
+        {
+          "id": "pg_clock_001",
+          "scenario": "Shot clock at 8 seconds, and your team hasn't generated a good shot yet. The score is tied with 3 minutes left in the game.",
+          "question": "What's your priority?",
+          "options": [
+            {"id": "A", "text": "Get the ball to your best scorer and let him create"},
+            {"id": "B", "text": "Take a quick shot to avoid the violation"},
+            {"id": "C", "text": "Drive to the rim for a high-percentage shot"},
+            {"id": "D", "text": "Call timeout to set up a play"}
+          ],
+          "correct": "A",
+          "explanation": "With 8 seconds left on the shot clock in a close game, get your best shot creator a touch in his preferred spot and let him work. Don't settle for a bad shot, but trust your best player to make something happen.",
+          "difficulty": "intermediate",
+          "tags": ["late-shot-clock", "close-game", "best-creator", "clutch-situation"]
+        },
+        {
+          "id": "pg_clock_002",
+          "scenario": "Your team is down 3 points with 45 seconds left. You have the ball with a full shot clock.",
+          "question": "How do you manage this possession?",
+          "options": [
+            {"id": "A", "text": "Attack immediately for a quick 3-pointer"},
+            {"id": "B", "text": "Work for a good 2-pointer to cut the lead to 1"},
+            {"id": "C", "text": "Use most of the shot clock, then take a 3-pointer"},
+            {"id": "D", "text": "Drive for 2 and foul on defense immediately"}
+          ],
+          "correct": "C",
+          "explanation": "Down 3 with 45 seconds, you likely need a 3-pointer to tie. Use most of the shot clock (30+ seconds) to work for the best possible 3-point shot. Don't give them too much time if you score, but don't rush the shot either.",
+          "difficulty": "advanced",
+          "tags": ["down-3", "3-pointer-needed", "clock-usage", "shot-quality"]
+        },
+        {
+          "id": "pg_clock_003",
+          "scenario": "End of the first quarter, your team has the ball with 18 seconds left, leading by 5 points.",
+          "question": "What's your approach for this possession?",
+          "options": [
+            {"id": "A", "text": "Hold for the last shot of the quarter"},
+            {"id": "B", "text": "Run your normal offense"},
+            {"id": "C", "text": "Work for a quick good shot"},
+            {"id": "D", "text": "Dribble out the clock"}
+          ],
+          "correct": "B",
+          "explanation": "With 18 seconds and a 5-point lead in the first quarter, run your normal offense. It's too early in the game to hold for one shot, and you don't want to waste a possession. Take a good shot when it comes.",
+          "difficulty": "beginner",
+          "tags": ["first-quarter", "early-game", "normal-offense", "good-shot"]
+        },
+        {
+          "id": "pg_clock_004",
+          "scenario": "Your team is up 2 points with 35 seconds left and the shot clock at 20 seconds.",
+          "question": "What's your clock management strategy?",
+          "options": [
+            {"id": "A", "text": "Use all 20 seconds then take any available shot"},
+            {"id": "B", "text": "Look for a good shot but don't force it"},
+            {"id": "C", "text": "Work for the best possible shot with 8-10 seconds left"},
+            {"id": "D", "text": "Get a shot off by the 15-second mark"}
+          ],
+          "correct": "C",
+          "explanation": "Up 2 with 35 seconds left, work the shot clock down to 8-10 seconds before shooting. This limits their time if you miss, but still gives you time to get a good shot and potentially get an offensive rebound.",
+          "difficulty": "advanced",
+          "tags": ["up-2", "late-game", "shot-clock-management", "limit-time"]
+        },
+        {
+          "id": "pg_clock_005",
+          "scenario": "Halftime is approaching with 8 seconds left. Your team is down 1 and has the ball at half court after a timeout.",
+          "question": "What's your mindset for this possession?",
+          "options": [
+            {"id": "A", "text": "Get any shot off - a bad shot is better than no shot"},
+            {"id": "B", "text": "Work for a 3-pointer to take the lead into halftime"},
+            {"id": "C", "text": "Look for your best shooter in his sweet spot"},
+            {"id": "D", "text": "Drive to the rim for a high-percentage shot"}
+          ],
+          "correct": "C",
+          "explanation": "With 8 seconds from half court, get the ball to your best shooter in his preferred spot and let him work. This is about shot quality and having your most reliable shooter take the attempt. Don't force a drive with limited time.",
+          "difficulty": "intermediate",
+          "tags": ["halftime-shot", "8-seconds", "best-shooter", "shot-quality"]
+        }
+      ]
+    },
+    "matchup-exploitation": {
+      "description": "Identifying size mismatches, speed advantages, foul trouble, and game flow management",
+      "questions": [
+        {
+          "id": "pg_matchup_001",
+          "scenario": "The opposing team's best defender just picked up his 4th foul with 8 minutes left in the game.",
+          "question": "How should this change your approach?",
+          "options": [
+            {"id": "A", "text": "Attack him immediately to try to foul him out"},
+            {"id": "B", "text": "Avoid him completely since he'll be playing more aggressively"},
+            {"id": "C", "text": "Test him early, then attack if he's playing passive"},
+            {"id": "D", "text": "Wait until later in the game to exploit his foul trouble"}
+          ],
+          "correct": "C",
+          "explanation": "With 4 fouls, test him early to see how aggressive he's playing. If he's backing off to avoid his 5th foul, attack him. If he's still playing physical, you can exploit that too by drawing the 5th foul through smart drives.",
+          "difficulty": "advanced",
+          "tags": ["foul-trouble", "4th-foul", "test-aggression", "exploit-caution"]
+        },
+        {
+          "id": "pg_matchup_002",
+          "scenario": "A much slower big man gets switched onto you on the perimeter during a pick-and-roll.",
+          "question": "What's your best move?",
+          "options": [
+            {"id": "A", "text": "Drive immediately before help can come"},
+            {"id": "B", "text": "Pull up for a 3-pointer over him"},
+            {"id": "C", "text": "Back him down in the post"},
+            {"id": "D", "text": "Pass to reset and avoid the mismatch"}
+          ],
+          "correct": "A",
+          "explanation": "Speed vs. size is usually won by speed. Attack immediately with your first step before help defense can rotate. The big man can't stay with you laterally, and you should get to the rim or draw a foul.",
+          "difficulty": "beginner",
+          "tags": ["speed-vs-size", "mismatch", "first-step", "attack-immediately"]
+        },
+        {
+          "id": "pg_matchup_003",
+          "scenario": "You notice the opposing point guard is getting tired after playing 35+ minutes and his defensive intensity is dropping.",
+          "question": "How do you take advantage of his fatigue?",
+          "options": [
+            {"id": "A", "text": "Push the pace to make him work harder"},
+            {"id": "B", "text": "Post him up to use his tiredness against him"},
+            {"id": "C", "text": "Run more pick-and-rolls to make him work"},
+            {"id": "D", "text": "All of the above"}
+          ],
+          "correct": "D",
+          "explanation": "When a defender is tired, attack in multiple ways: push pace to make him run more, use screens to make him work harder, and exploit his decreased lateral quickness. Make him defend you in space and wear him down further.",
+          "difficulty": "intermediate",
+          "tags": ["fatigue", "push-pace", "multiple-attacks", "wear-down"]
+        },
+        {
+          "id": "pg_matchup_004",
+          "scenario": "Your team's center has a significant size advantage, but the opposing team keeps sending double teams whenever he touches the ball.",
+          "question": "How do you help exploit this size mismatch?",
+          "options": [
+            {"id": "A", "text": "Keep feeding him the ball and let him work through the double"},
+            {"id": "B", "text": "Space the floor better so he has more room to work"},
+            {"id": "C", "text": "Look for the open man when the double team comes"},
+            {"id": "D", "text": "Run different plays that don't involve the post"}
+          ],
+          "correct": "C",
+          "explanation": "When they double your big man, someone is getting left open. Your job is to recognize who gets left behind when the double comes and get them the ball quickly for an open shot. Turn their help into your advantage.",
+          "difficulty": "intermediate",
+          "tags": ["double-team", "size-advantage", "find-open-man", "help-creates-advantage"]
+        },
+        {
+          "id": "pg_matchup_005",
+          "scenario": "The other team has a shot blocker who's altering shots at the rim, but he's not quick enough to defend pick-and-rolls on the perimeter.",
+          "question": "What's your strategy to neutralize his rim protection?",
+          "options": [
+            {"id": "A", "text": "Avoid driving to the rim entirely"},
+            {"id": "B", "text": "Use pick-and-rolls to pull him away from the basket"},
+            {"id": "C", "text": "Attack him one-on-one to show you're not scared"},
+            {"id": "D", "text": "Focus on outside shooting only"}
+          ],
+          "correct": "B",
+          "explanation": "If he's a rim protector but struggles on pick-and-rolls, force him to defend in space. Run pick-and-rolls that pull him out of the paint, then attack the rim when he's out of position or take open shots when he drops back.",
+          "difficulty": "advanced",
+          "tags": ["rim-protector", "pull-out", "pick-and-roll", "space-defense"]
+        }
+      ]
+    }
+  }
+}

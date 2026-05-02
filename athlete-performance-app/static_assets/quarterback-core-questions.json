@@ -1,0 +1,516 @@
+{
+  "position": "quarterback",
+  "sport": "football",
+  "categories": {
+    "pre-snap-reads": {
+      "description": "Coverage recognition, blitz identification, and formation analysis",
+      "questions": [
+        {
+          "id": "qb_preread_001",
+          "scenario": "3rd & 8, shotgun formation. You see two safeties at 12-yard depth, corners in press coverage, and linebackers at normal depth.",
+          "question": "What coverage should you expect?",
+          "options": [
+            {"id": "A", "text": "Cover 0 (Man-to-man, no help)"},
+            {"id": "B", "text": "Cover 1 (Single high safety)"},
+            {"id": "C", "text": "Cover 2 (Two high safeties)"},
+            {"id": "D", "text": "Cover 3 (Three deep zones)"}
+          ],
+          "correct": "C",
+          "explanation": "Two safeties at intermediate depth (12 yards) with press corners indicates Cover 2. The safeties will split deep halves while corners and linebackers cover underneath zones or man coverage.",
+          "difficulty": "intermediate",
+          "tags": ["coverage-recognition", "3rd-down", "shotgun"]
+        },
+        {
+          "id": "qb_preread_002",
+          "scenario": "Pre-snap, you identify a single safety at 15-yard depth, corners playing off coverage, and the MLB showing blitz in the A-gap.",
+          "question": "What's your primary concern?",
+          "options": [
+            {"id": "A", "text": "Deep post route will be open"},
+            {"id": "B", "text": "Hot route needed over the middle"},
+            {"id": "C", "text": "Outside routes will be bracketed"},
+            {"id": "D", "text": "Running back checkdown will be covered"}
+          ],
+          "correct": "B",
+          "explanation": "With MLB blitzing in Cover 1, the middle of the field opens up. Your hot route should be a quick slant or hitch over the vacated middle linebacker area.",
+          "difficulty": "intermediate",
+          "tags": ["blitz-recognition", "cover-1", "hot-routes"]
+        },
+        {
+          "id": "qb_preread_003",
+          "scenario": "You see corners playing inside leverage, two high safeties splitting the field, and linebackers dropping deeper than usual.",
+          "question": "This indicates what coverage concept?",
+          "options": [
+            {"id": "A", "text": "Man coverage with safety help"},
+            {"id": "B", "text": "Cover 2 with underneath zones"},
+            {"id": "C", "text": "Cover 4 (Quarters coverage)"},
+            {"id": "D", "text": "Cover 0 blitz coming"}
+          ],
+          "correct": "C",
+          "explanation": "Inside corner leverage with two high safeties and dropping linebackers suggests quarters coverage - four deep defenders splitting deep zones with pattern matching underneath.",
+          "difficulty": "advanced",
+          "tags": ["coverage-recognition", "quarters-coverage", "leverage"]
+        },
+        {
+          "id": "qb_preread_004",
+          "scenario": "Pre-snap, the safety starts walking down toward the line of scrimmage. The corner on that side begins backing up.",
+          "question": "What's happening?",
+          "options": [
+            {"id": "A", "text": "Corner blitz incoming"},
+            {"id": "B", "text": "Safety blitz with corner rotating deep"},
+            {"id": "C", "text": "Zone coverage shifting"},
+            {"id": "D", "text": "Man coverage adjustment"}
+          ],
+          "correct": "B",
+          "explanation": "When a safety walks down and the corner backs up, it's a late rotation blitz. The corner will take the safety's deep responsibility while the safety blitzes.",
+          "difficulty": "advanced",
+          "tags": ["blitz-recognition", "rotation", "safety-blitz"]
+        },
+        {
+          "id": "qb_preread_005",
+          "scenario": "You identify 6 potential rushers at the line of scrimmage. Your protection can handle 5.",
+          "question": "What's your first priority?",
+          "options": [
+            {"id": "A", "text": "Call timeout to change the play"},
+            {"id": "B", "text": "Identify the 'hot' receiver"},
+            {"id": "C", "text": "Audible to a running play"},
+            {"id": "D", "text": "Check to max protection"}
+          ],
+          "correct": "B",
+          "explanation": "With 6 rushers vs 5 blockers, someone will be free. Identify which receiver has the hot route to throw immediately when that rusher breaks free.",
+          "difficulty": "intermediate",
+          "tags": ["blitz-recognition", "hot-routes", "protection"]
+        },
+        {
+          "id": "qb_preread_006",
+          "scenario": "The outside linebacker on the weak side is creeping closer to the line. The strong safety is also walking down.",
+          "question": "What blitz concept should you expect?",
+          "options": [
+            {"id": "A", "text": "A-gap MLB blitz"},
+            {"id": "B", "text": "Weak side overload blitz"},
+            {"id": "C", "text": "Strong side overload blitz"},
+            {"id": "D", "text": "All-out zero blitz"}
+          ],
+          "correct": "C",
+          "explanation": "With both the OLB and safety showing blitz on the strong side, expect an overload where multiple rushers attack from the same side to outnumber your blockers.",
+          "difficulty": "intermediate",
+          "tags": ["blitz-recognition", "overload-blitz", "strong-side"]
+        },
+        {
+          "id": "qb_preread_007",
+          "scenario": "You notice the free safety is aligned 8 yards deep directly over your slot receiver, with corners in press man coverage.",
+          "question": "What coverage and what's your best attack?",
+          "options": [
+            {"id": "A", "text": "Cover 1 Robber - throw over the robber"},
+            {"id": "B", "text": "Cover 2 - attack the seams"},
+            {"id": "C", "text": "Cover 0 - quick slants all around"},
+            {"id": "D", "text": "Cover 3 - work the flats"}
+          ],
+          "correct": "A",
+          "explanation": "A safety sitting short over the slot with press corners indicates Cover 1 Robber. The safety will jump underneath routes, so throw over him or attack the edges where he can't help.",
+          "difficulty": "advanced",
+          "tags": ["coverage-recognition", "robber-coverage", "slot-receiver"]
+        },
+        {
+          "id": "qb_preread_008",
+          "scenario": "The defense shows 8 men in the box with a single high safety. Your formation has 3 receivers to one side.",
+          "question": "What's the defense likely trying to stop and how should you attack?",
+          "options": [
+            {"id": "A", "text": "Stopping the run - throw a quick fade"},
+            {"id": "B", "text": "Stopping the pass - run the ball"},
+            {"id": "C", "text": "Stopping the run - throw to the trips side"},
+            {"id": "D", "text": "Even coverage - audible to balance"}
+          ],
+          "correct": "C",
+          "explanation": "8 in the box means they're stopping the run. With trips to one side, that side has a numbers advantage in the passing game. Attack the trips side with quick timing routes.",
+          "difficulty": "beginner",
+          "tags": ["box-count", "trips-formation", "run-stopping"]
+        }
+      ]
+    },
+    "post-snap-decisions": {
+      "description": "Progression reads, route concepts, and decision-making after the snap",
+      "questions": [
+        {
+          "id": "qb_postsnap_001",
+          "scenario": "Running four verticals against Cover 2, your #2 receiver (slot) sits in the hole between the safeties. The MLB is dropping to cover him.",
+          "question": "Where should you look?",
+          "options": [
+            {"id": "A", "text": "Deep comeback by #1 receiver"},
+            {"id": "B", "text": "Checkdown to the running back"},
+            {"id": "C", "text": "#3 receiver crossing underneath"},
+            {"id": "D", "text": "Scramble immediately"}
+          ],
+          "correct": "B",
+          "explanation": "In Cover 2 vs four verticals, if the MLB takes the slot receiver in the seam, the running back should be open underneath for an easy completion and YAC opportunity.",
+          "difficulty": "intermediate",
+          "tags": ["four-verticals", "cover-2", "checkdown", "progression"]
+        },
+        {
+          "id": "qb_postsnap_002",
+          "scenario": "Your primary read (15-yard out) is covered by a linebacker sitting in the throwing lane. The safety is covering your deep route.",
+          "question": "What's your best option?",
+          "options": [
+            {"id": "A", "text": "Force the throw to the out route"},
+            {"id": "B", "text": "Look to your checkdown immediately"},
+            {"id": "C", "text": "Pump fake and look deep"},
+            {"id": "D", "text": "Check your intermediate crosser"}
+          ],
+          "correct": "D",
+          "explanation": "With the linebacker jumping the out route and safety deep, the intermediate crossing route should find the soft spot in the coverage between levels.",
+          "difficulty": "intermediate",
+          "tags": ["progression-reads", "underneath-coverage", "crossing-routes"]
+        },
+        {
+          "id": "qb_postsnap_003",
+          "scenario": "Running a smash concept (corner-speed out combination) vs Cover 3. The corner sits on the speed out, and the safety rotates to the corner route.",
+          "question": "Your move?",
+          "options": [
+            {"id": "A", "text": "Throw the speed out anyway"},
+            {"id": "B", "text": "Look to the backside"},
+            {"id": "C", "text": "Throw the corner route before safety arrives"},
+            {"id": "D", "text": "Dump to the running back"}
+          ],
+          "correct": "B",
+          "explanation": "When both parts of the smash concept are covered, the backside routes should be working against lighter coverage. Check your progression to the other side.",
+          "difficulty": "advanced",
+          "tags": ["smash-concept", "cover-3", "backside-reads", "progression"]
+        },
+        {
+          "id": "qb_postsnap_004",
+          "scenario": "You're running trips bunch formation with a pick play. The defense switches the pick, putting both receivers in man coverage.",
+          "question": "What happens to your timing?",
+          "options": [
+            {"id": "A", "text": "Throw immediately, before the switch"},
+            {"id": "B", "text": "Delay slightly for receivers to clear"},
+            {"id": "C", "text": "Look elsewhere immediately"},
+            {"id": "D", "text": "Throw to the original route regardless"}
+          ],
+          "correct": "B",
+          "explanation": "When defenses switch picks in man coverage, you need to allow an extra beat for your receivers to create separation after the switch before delivering the ball.",
+          "difficulty": "advanced",
+          "tags": ["pick-plays", "man-coverage", "timing", "trips-bunch"]
+        },
+        {
+          "id": "qb_postsnap_005",
+          "scenario": "Post-snap, you see the safety rotating late to help on your primary receiver running a comeback route.",
+          "question": "Where is the void in coverage likely to be?",
+          "options": [
+            {"id": "A", "text": "Deep over the middle where safety came from"},
+            {"id": "B", "text": "Short underneath the comeback"},
+            {"id": "C", "text": "Backside where there's less help"},
+            {"id": "D", "text": "In the flat where the safety vacated"}
+          ],
+          "correct": "A",
+          "explanation": "When a safety rotates late to help on a route, he leaves a void in his original area. The deep middle area he vacated is now vulnerable to crossing routes or posts.",
+          "difficulty": "intermediate",
+          "tags": ["late-rotation", "safety-help", "void-coverage", "comeback-routes"]
+        },
+        {
+          "id": "qb_postsnap_006",
+          "scenario": "You're in the pocket and see your slot receiver break open on a slant, but a linebacker is charging the throwing lane.",
+          "question": "How do you complete this pass?",
+          "options": [
+            {"id": "A", "text": "Throw a bullet over the linebacker"},
+            {"id": "B", "text": "Throw low to avoid the linebacker"},
+            {"id": "C", "text": "Pump fake to freeze the linebacker first"},
+            {"id": "D", "text": "Step up and throw around the linebacker"}
+          ],
+          "correct": "D",
+          "explanation": "Step up in the pocket to change your throwing angle. This allows you to throw around the linebacker rather than over him, giving your receiver a better chance to catch and secure the ball.",
+          "difficulty": "beginner",
+          "tags": ["pocket-movement", "throwing-lanes", "slant-routes", "linebacker-coverage"]
+        }
+      ]
+    },
+    "situational-awareness": {
+      "description": "Down and distance, field position, clock management, and game situation decisions",
+      "questions": [
+        {
+          "id": "qb_situational_001",
+          "scenario": "1st & 10 at your opponent's 35-yard line. The defense is showing single high safety with corners playing soft.",
+          "question": "What's your best approach?",
+          "options": [
+            {"id": "A", "text": "Take a shot deep immediately"},
+            {"id": "B", "text": "Run a quick 5-yard hitch for easy completion"},
+            {"id": "C", "text": "Look for 12-15 yard intermediate routes"},
+            {"id": "D", "text": "Hand the ball off to establish run"}
+          ],
+          "correct": "C",
+          "explanation": "In plus territory with soft coverage, attack the intermediate level. This gives you a high-percentage throw with good YAC potential and keeps you ahead of the chains.",
+          "difficulty": "beginner",
+          "tags": ["plus-territory", "soft-coverage", "intermediate-routes", "1st-down"]
+        },
+        {
+          "id": "qb_situational_002",
+          "scenario": "3rd & 12 from your own 15-yard line. The defense shows Cover 2.",
+          "question": "What's your priority?",
+          "options": [
+            {"id": "A", "text": "Throw deep and hope for PI call"},
+            {"id": "B", "text": "Find the intermediate seam route"},
+            {"id": "C", "text": "Take the checkdown for 8 yards"},
+            {"id": "D", "text": "Scramble for the first down"}
+          ],
+          "correct": "B",
+          "explanation": "On 3rd & long from deep in your territory, you need to convert. The seam between safeties in Cover 2 gives you the best chance to get the first down without risking a pick-six.",
+          "difficulty": "intermediate",
+          "tags": ["3rd-and-long", "own-territory", "cover-2", "seam-routes"]
+        },
+        {
+          "id": "qb_situational_003",
+          "scenario": "You're at the opponent's 12-yard line, 2nd & goal. The defense shows goal line personnel (6 DBs).",
+          "question": "What concept gives you the best chance?",
+          "options": [
+            {"id": "A", "text": "Fade route to the corner"},
+            {"id": "B", "text": "Quick slant over the middle"},
+            {"id": "C", "text": "Rollout bootleg with multiple options"},
+            {"id": "D", "text": "Four vertical routes"}
+          ],
+          "correct": "C",
+          "explanation": "Against goal line defense with extra DBs, a rollout gives you multiple options: throw to open receiver, run if the edge is open, or throw it away if nothing's there.",
+          "difficulty": "intermediate",
+          "tags": ["red-zone", "goal-line-defense", "rollout", "multiple-options"]
+        },
+        {
+          "id": "qb_situational_004",
+          "scenario": "Backed up at your own 8-yard line, 2nd & 15 after a holding penalty.",
+          "question": "What's your primary concern?",
+          "options": [
+            {"id": "A", "text": "Getting a first down immediately"},
+            {"id": "B", "text": "Avoiding a safety"},
+            {"id": "C", "text": "Getting positive yards to help the punter"},
+            {"id": "D", "text": "Taking a deep shot"}
+          ],
+          "correct": "B",
+          "explanation": "Deep in your end zone, ball security is paramount. Take what the defense gives you and avoid turnovers or safeties that would give your opponent points and possession.",
+          "difficulty": "beginner",
+          "tags": ["own-end-zone", "ball-security", "safety-avoidance", "field-position"]
+        },
+        {
+          "id": "qb_situational_005",
+          "scenario": "Two-minute warning, down by 3, at your own 25-yard line with 1 timeout remaining.",
+          "question": "What's your approach on this drive?",
+          "options": [
+            {"id": "A", "text": "Aggressive deep shots to score quickly"},
+            {"id": "B", "text": "Conservative short passes to move chains"},
+            {"id": "C", "text": "Mix of intermediate routes and sideline throws"},
+            {"id": "D", "text": "Run the ball to control clock"}
+          ],
+          "correct": "C",
+          "explanation": "With limited timeouts, you need efficient yardage while managing clock. Mix intermediate routes for chunks with sideline throws to stop the clock and preserve your timeout.",
+          "difficulty": "advanced",
+          "tags": ["two-minute-drill", "clock-management", "trailing", "timeout-management"]
+        },
+        {
+          "id": "qb_situational_006",
+          "scenario": "4th & 3 at the opponent's 38-yard line, early in the 2nd quarter, game tied 7-7.",
+          "question": "What factors should influence your decision?",
+          "options": [
+            {"id": "A", "text": "Always punt - too early to be aggressive"},
+            {"id": "B", "text": "Always go - field position is too good"},
+            {"id": "C", "text": "Consider wind, defense tendencies, and your offense's success rate"},
+            {"id": "D", "text": "Kick field goal for guaranteed points"}
+          ],
+          "correct": "C",
+          "explanation": "4th & 3 in plus territory requires situational analysis: your team's 4th down success rate, opponent's short-yardage defense, weather conditions, and momentum factors all matter.",
+          "difficulty": "advanced",
+          "tags": ["4th-down", "plus-territory", "decision-making", "situational-factors"]
+        }
+      ]
+    },
+    "red-zone-tactics": {
+      "description": "Red zone concepts, goal line situations, and condensed field passing",
+      "questions": [
+        {
+          "id": "qb_redzone_001",
+          "scenario": "Red zone, 3rd & goal from the 8. You see man coverage with a safety over your #1 receiver.",
+          "question": "What route gives you the best chance?",
+          "options": [
+            {"id": "A", "text": "Back-shoulder fade to #1"},
+            {"id": "B", "text": "Pick play with slot receivers"},
+            {"id": "C", "text": "Quick slant to avoid the safety"},
+            {"id": "D", "text": "Rollout to create time"}
+          ],
+          "correct": "B",
+          "explanation": "With man coverage and safety help over your best receiver, a pick play with slot receivers creates natural separation and gives you a higher percentage throw.",
+          "difficulty": "intermediate",
+          "tags": ["red-zone", "man-coverage", "safety-help", "pick-plays"]
+        },
+        {
+          "id": "qb_redzone_002",
+          "scenario": "1st & goal from the 3. The defense shows 8 men in the box.",
+          "question": "What's your best red zone concept?",
+          "options": [
+            {"id": "A", "text": "Quick fade to the corner"},
+            {"id": "B", "text": "Slant route over the middle"},
+            {"id": "C", "text": "High-low concept on the safety"},
+            {"id": "D", "text": "Bootleg with run/pass option"}
+          ],
+          "correct": "D",
+          "explanation": "With 8 in the box, a bootleg gets you outside the congestion and gives you dual threat capability - throw if someone's open, run if the edge is clear.",
+          "difficulty": "intermediate",
+          "tags": ["goal-line", "8-in-box", "bootleg", "run-pass-option"]
+        },
+        {
+          "id": "qb_redzone_003",
+          "scenario": "Red zone, 2nd & goal from the 6. The defense is in Cover 2 man with the safeties sitting low at the goal line.",
+          "question": "Where is the best place to attack?",
+          "options": [
+            {"id": "A", "text": "Over the top with fade routes"},
+            {"id": "B", "text": "Underneath with quick slants"},
+            {"id": "C", "text": "The back corners with corner routes"},
+            {"id": "D", "text": "The middle with crossing routes"}
+          ],
+          "correct": "C",
+          "explanation": "With safeties sitting low in Cover 2, the back corners are vulnerable. Corner routes or back-shoulder fades to the corners of the end zone are your best options.",
+          "difficulty": "advanced",
+          "tags": ["red-zone", "cover-2-man", "low-safeties", "corner-routes"]
+        },
+        {
+          "id": "qb_redzone_004",
+          "scenario": "Goal line, 4th & goal from the 1. The defense shows their biggest personnel package with 9 men in the box.",
+          "question": "What gives you the best chance to score?",
+          "options": [
+            {"id": "A", "text": "QB sneak up the middle"},
+            {"id": "B", "text": "Fade route to your tallest receiver"},
+            {"id": "C", "text": "Quick slant to the slot"},
+            {"id": "D", "text": "Rollout with multiple options"}
+          ],
+          "correct": "D",
+          "explanation": "With 9 in the box, the edges are vulnerable. A rollout gives you the option to throw to an open receiver, run it in yourself, or throw it away if nothing's there.",
+          "difficulty": "intermediate",
+          "tags": ["goal-line", "4th-down", "9-in-box", "rollout-options"]
+        }
+      ]
+    },
+    "audibles-adjustments": {
+      "description": "Protection calls, route adjustments, and pre-snap modifications",
+      "questions": [
+        {
+          "id": "qb_audibles_001",
+          "scenario": "Pre-snap, you identify the mike linebacker in the A-gap, but your center is pointing to the outside linebacker.",
+          "question": "What should you do?",
+          "options": [
+            {"id": "A", "text": "Go with your center's call"},
+            {"id": "B", "text": "Re-identify the mike verbally"},
+            {"id": "C", "text": "Call timeout"},
+            {"id": "D", "text": "Keep the original protection"}
+          ],
+          "correct": "B",
+          "explanation": "If there's confusion about the mike identification, you need to make sure everyone is on the same page by clearly calling out the mike linebacker to set proper protection.",
+          "difficulty": "beginner",
+          "tags": ["mike-identification", "protection-calls", "communication"]
+        },
+        {
+          "id": "qb_audibles_002",
+          "scenario": "You see a safety walking down late, creating a 6th potential rusher. Your protection is set for 5.",
+          "question": "Your best adjustment is:",
+          "options": [
+            {"id": "A", "text": "Slide protection to the blitz side"},
+            {"id": "B", "text": "Keep the running back in to block"},
+            {"id": "C", "text": "Call 'hot' routes for all receivers"},
+            {"id": "D", "text": "Hard count to try drawing them offsides"}
+          ],
+          "correct": "C",
+          "explanation": "With a 6th rusher, someone will be free. Having all receivers convert to hot routes ensures you have immediate options when the free rusher breaks through.",
+          "difficulty": "intermediate",
+          "tags": ["6th-rusher", "hot-routes", "blitz-adjustment"]
+        },
+        {
+          "id": "qb_audibles_003",
+          "scenario": "You call a deep passing play, but at the line you see the defense has rotated to Cover 2 with 8 men in the box.",
+          "question": "What's your best audible option?",
+          "options": [
+            {"id": "A", "text": "Keep the deep pass - fewer deep defenders"},
+            {"id": "B", "text": "Audible to a running play"},
+            {"id": "C", "text": "Check to quick slants underneath"},
+            {"id": "D", "text": "Call timeout to get a better play"}
+          ],
+          "correct": "C",
+          "explanation": "With 8 in the box showing run stop but Cover 2 over top, the underneath areas are vulnerable. Quick slants can exploit the soft underneath coverage.",
+          "difficulty": "intermediate",
+          "tags": ["audible", "cover-2", "8-in-box", "quick-game"]
+        },
+        {
+          "id": "qb_audibles_004",
+          "scenario": "Your receiver motions across the formation and the linebacker follows him, confirming man coverage. Your original play was designed for zone.",
+          "question": "How should you adjust?",
+          "options": [
+            {"id": "A", "text": "Run the play as called"},
+            {"id": "B", "text": "Signal receivers to run man-beating routes"},
+            {"id": "C", "text": "Audible to a completely different play"},
+            {"id": "D", "text": "Motion the receiver back to his original spot"}
+          ],
+          "correct": "B",
+          "explanation": "Once you've identified man coverage through motion, signal your receivers to convert their routes to man-beating concepts like slants, hitches, or comeback routes.",
+          "difficulty": "advanced",
+          "tags": ["motion-read", "man-coverage", "route-adjustments", "coverage-recognition"]
+        }
+      ]
+    },
+    "pocket-presence": {
+      "description": "Rush recognition, pocket movement, escape routes, and pressure management",
+      "questions": [
+        {
+          "id": "qb_pocket_001",
+          "scenario": "You feel pressure from both edges, but the pocket is clean up the middle.",
+          "question": "What's your best move?",
+          "options": [
+            {"id": "A", "text": "Step up in the pocket"},
+            {"id": "B", "text": "Roll out to avoid pressure"},
+            {"id": "C", "text": "Throw the ball away immediately"},
+            {"id": "D", "text": "Duck and cover"}
+          ],
+          "correct": "A",
+          "explanation": "When edge rushers are coming but the middle is clean, step up into the pocket. This gives you more time and maintains your throwing angles to all receivers.",
+          "difficulty": "beginner",
+          "tags": ["pocket-movement", "edge-rush", "step-up"]
+        },
+        {
+          "id": "qb_pocket_002",
+          "scenario": "The pocket is collapsing from all sides. Your checkdown is covered, and you're about to be sacked.",
+          "question": "What should you do?",
+          "options": [
+            {"id": "A", "text": "Take the sack to avoid an interception"},
+            {"id": "B", "text": "Throw the ball at a receiver's feet"},
+            {"id": "C", "text": "Try to scramble for positive yards"},
+            {"id": "D", "text": "Throw the ball out of bounds"}
+          ],
+          "correct": "D",
+          "explanation": "When all options are covered and a sack is imminent, throw the ball out of bounds to avoid the loss of yardage and preserve the down for your next play call.",
+          "difficulty": "beginner",
+          "tags": ["pocket-collapse", "throw-away", "sack-avoidance"]
+        },
+        {
+          "id": "qb_pocket_003",
+          "scenario": "You're scrambling to your right when you see your receiver breaking open across the middle of the field.",
+          "question": "What's the key to making this throw?",
+          "options": [
+            {"id": "A", "text": "Plant your feet and throw immediately"},
+            {"id": "B", "text": "Keep running and throw off your back foot"},
+            {"id": "C", "text": "Stop, set your feet, then throw across your body"},
+            {"id": "D", "text": "Continue scrambling until you're directly behind him"}
+          ],
+          "correct": "C",
+          "explanation": "When scrambling right and throwing back across the field, you must stop and set your feet to generate proper velocity and accuracy on the cross-body throw.",
+          "difficulty": "advanced",
+          "tags": ["scrambling", "cross-body-throw", "footwork", "accuracy"]
+        },
+        {
+          "id": "qb_pocket_004",
+          "scenario": "A defensive end has a clear rush lane up the middle. Your running back is supposed to pick him up but whiffs on the block.",
+          "question": "What's your immediate reaction?",
+          "options": [
+            {"id": "A", "text": "Step up further to avoid him"},
+            {"id": "B", "text": "Slide laterally in the pocket"},
+            {"id": "C", "text": "Duck under his rush"},
+            {"id": "D", "text": "Get rid of the ball immediately"}
+          ],
+          "correct": "D",
+          "explanation": "When a free rusher has a clear path and your protection breaks down, your internal clock should tell you to get rid of the ball immediately to your hot route or checkdown.",
+          "difficulty": "intermediate",
+          "tags": ["free-rusher", "protection-breakdown", "internal-clock", "quick-release"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,486 @@
+{
+  "position": "pitcher",
+  "sport": "baseball",
+  "categories": {
+    "count-management": {
+      "description": "Working ahead, getting ahead 0-1, avoiding hitter's counts",
+      "questions": [
+        {
+          "id": "pitcher_count_001",
+          "scenario": "0-0 count to a .300 hitter with runners in scoring position. You have a 4-seam fastball, slider, and changeup in your arsenal.",
+          "question": "What's your best approach for the first pitch?",
+          "options": [
+            {"id": "A", "text": "Fastball down the middle - challenge him"},
+            {"id": "B", "text": "Slider in the dirt - see if he chases"},
+            {"id": "C", "text": "Fastball on the corners for a strike"},
+            {"id": "D", "text": "Changeup to throw off his timing"}
+          ],
+          "correct": "C",
+          "explanation": "Getting ahead 0-1 is crucial with RISP. A well-located fastball on the corners gives you the best chance for a first-pitch strike without giving him something fat to hit. Avoid the heart of the plate but don't risk being behind in the count.",
+          "difficulty": "intermediate",
+          "tags": ["0-0-count", "risp", "first-pitch-strike", "corner-location"]
+        },
+        {
+          "id": "pitcher_count_002",
+          "scenario": "You're ahead 0-2 on a aggressive hitter known for swinging at bad pitches early in at-bats.",
+          "question": "How should you approach the 0-2 pitch?",
+          "options": [
+            {"id": "A", "text": "Challenge with your best fastball - finish him off"},
+            {"id": "B", "text": "Waste a pitch off the plate to see if he chases"},
+            {"id": "C", "text": "Throw a strike with your out pitch"},
+            {"id": "D", "text": "Mix speeds and throw a changeup in the zone"}
+          ],
+          "correct": "B",
+          "explanation": "With an aggressive hitter who chases bad pitches, you have the luxury of wasting a pitch off the plate. Make him chase your pitch rather than giving him something to hit. You're in complete control at 0-2.",
+          "difficulty": "beginner",
+          "tags": ["0-2-count", "aggressive-hitter", "waste-pitch", "chase-pitch"]
+        },
+        {
+          "id": "pitcher_count_003",
+          "scenario": "2-0 count against a patient hitter who works deep counts. Bases empty, 2 outs.",
+          "question": "What's your priority on this pitch?",
+          "options": [
+            {"id": "A", "text": "Challenge with your best stuff"},
+            {"id": "B", "text": "Throw a strike with your most reliable pitch"},
+            {"id": "C", "text": "Try to fool him with an off-speed pitch"},
+            {"id": "D", "text": "Attack the zone but avoid the middle"}
+          ],
+          "correct": "B",
+          "explanation": "In a 2-0 hitter's count, you need to throw a strike to avoid going 3-0. Use your most reliable strike-throwing pitch (usually fastball) to get back in the count. Don't try to be too fine - just get a strike.",
+          "difficulty": "intermediate",
+          "tags": ["2-0-count", "hitters-count", "reliable-strike", "patient-hitter"]
+        },
+        {
+          "id": "pitcher_count_004",
+          "scenario": "1-1 count, runner on first base. The hitter is a good contact hitter who rarely strikes out but hits for average.",
+          "question": "What's your best strategy for this pitch?",
+          "options": [
+            {"id": "A", "text": "Attack with your out pitch for the strikeout"},
+            {"id": "B", "text": "Work the corners to avoid hard contact"},
+            {"id": "C", "text": "Challenge in the zone - let your defense work"},
+            {"id": "D", "text": "Change eye levels with high and low strikes"}
+          ],
+          "correct": "B",
+          "explanation": "Against a contact hitter at 1-1, work the corners to avoid giving him something he can square up. You're not likely to strike him out, so focus on weak contact by staying away from the heart of the plate.",
+          "difficulty": "advanced",
+          "tags": ["1-1-count", "contact-hitter", "corner-work", "weak-contact"]
+        },
+        {
+          "id": "pitcher_count_005",
+          "scenario": "3-1 count with the bases loaded and your team leading by 1 run in the 7th inning.",
+          "question": "How do you handle this pressure situation?",
+          "options": [
+            {"id": "A", "text": "Challenge with your best fastball down the middle"},
+            {"id": "B", "text": "Throw a competitive strike with your most reliable pitch"},
+            {"id": "C", "text": "Try to paint the corner with a breaking ball"},
+            {"id": "D", "text": "Pitch around him and walk in the tying run"}
+          ],
+          "correct": "B",
+          "explanation": "In a 3-1 count with bases loaded, you must throw a strike to avoid walking in a run. Use your most reliable strike-throwing pitch in a competitive location - not down the middle, but definitely in the zone.",
+          "difficulty": "advanced",
+          "tags": ["3-1-count", "bases-loaded", "pressure-situation", "must-strike"]
+        }
+      ]
+    },
+    "sequencing": {
+      "description": "Setting up batters, tunneling pitches, changing eye levels",
+      "questions": [
+        {
+          "id": "pitcher_sequence_001",
+          "scenario": "You've shown this hitter two fastballs up in the zone in previous at-bats. Now you're ahead 1-2 and want to put him away.",
+          "question": "What's your best sequence to finish this at-bat?",
+          "options": [
+            {"id": "A", "text": "Another fastball up - keep challenging"},
+            {"id": "B", "text": "Breaking ball down and away"},
+            {"id": "C", "text": "Changeup to change speeds"},
+            {"id": "D", "text": "Fastball down to change eye level"}
+          ],
+          "correct": "D",
+          "explanation": "After establishing fastballs up in the zone, changing eye levels with a fastball down gives you the best chance for weak contact or a swing and miss. The hitter's eyes are trained to look up based on your previous pattern.",
+          "difficulty": "intermediate",
+          "tags": ["eye-level-change", "sequencing", "1-2-count", "pattern-breaking"]
+        },
+        {
+          "id": "pitcher_sequence_002",
+          "scenario": "You have a 4-seam fastball (92 mph) and a changeup (84 mph) with similar arm action. The hitter is sitting on your fastball.",
+          "question": "How do you best utilize this pitch combination?",
+          "options": [
+            {"id": "A", "text": "Alternate fastball-changeup every pitch"},
+            {"id": "B", "text": "Show fastball first, then tunnel the changeup"},
+            {"id": "C", "text": "Lead with changeup to disrupt timing"},
+            {"id": "D", "text": "Only throw fastballs to challenge him"}
+          ],
+          "correct": "B",
+          "explanation": "Tunneling means the pitches look identical out of your hand. Show the fastball first to establish the arm action and speed, then tunnel the changeup with identical delivery. The 8 mph difference will disrupt his timing.",
+          "difficulty": "advanced",
+          "tags": ["tunneling", "changeup", "arm-action", "timing-disruption"]
+        },
+        {
+          "id": "pitcher_sequence_003",
+          "scenario": "You struck out this hitter on a slider away in his last at-bat. He's now expecting that same pitch in a similar count (2-2).",
+          "question": "How should you sequence this at-bat?",
+          "options": [
+            {"id": "A", "text": "Go back to the slider away - it worked before"},
+            {"id": "B", "text": "Slider in the same location but throw it for a ball"},
+            {"id": "C", "text": "Fastball in on his hands"},
+            {"id": "D", "text": "Different pitch, same location"}
+          ],
+          "correct": "C",
+          "explanation": "Good hitters make adjustments. If you got him with a slider away, he's likely looking for that pitch. Come inside with a fastball to jam him and keep him honest. Attack his weakness (inside) since he's focused on your previous strength (away).",
+          "difficulty": "advanced",
+          "tags": ["adjustment", "inside-fastball", "2-2-count", "hitter-memory"]
+        },
+        {
+          "id": "pitcher_sequence_004",
+          "scenario": "Bottom of the 9th, you need one more out. The hitter has seen your fastball, slider, and changeup multiple times tonight.",
+          "question": "What's your approach for this final out?",
+          "options": [
+            {"id": "A", "text": "Go with your best pitch regardless of what he's seen"},
+            {"id": "B", "text": "Use the pitch you've thrown least tonight"},
+            {"id": "C", "text": "Sequence backwards from what you did earlier"},
+            {"id": "D", "text": "Attack his weakest zone with your strength"}
+          ],
+          "correct": "D",
+          "explanation": "In pressure situations, attack the hitter's weakness with your strength. If he struggles with high fastballs and that's your best pitch, challenge him there. Don't overthink - trust your stuff against his weakness.",
+          "difficulty": "intermediate",
+          "tags": ["pressure-situation", "attack-weakness", "trust-stuff", "9th-inning"]
+        },
+        {
+          "id": "pitcher_sequence_005",
+          "scenario": "You have a curveball that breaks down and in to righties, and a slider that breaks down and away. Facing a right-handed pull hitter.",
+          "question": "How do you sequence these breaking balls most effectively?",
+          "options": [
+            {"id": "A", "text": "Curveball first to jam him, then slider away"},
+            {"id": "B", "text": "Slider away first to get him reaching, then curveball in"},
+            {"id": "C", "text": "Alternate them randomly"},
+            {"id": "D", "text": "Only throw sliders away - that's his weakness"}
+          ],
+          "correct": "A",
+          "explanation": "Against a pull hitter, start with the curveball in to jam his swing and show him something inside. Then come back with the slider away. This sequence moves his eyes and makes the slider away even more effective.",
+          "difficulty": "advanced",
+          "tags": ["breaking-ball-sequence", "pull-hitter", "eye-movement", "inside-out"]
+        }
+      ]
+    },
+    "situational-pitching": {
+      "description": "RISP, bases loaded, 2-out situations, and game state awareness",
+      "questions": [
+        {
+          "id": "pitcher_situational_001",
+          "scenario": "Runner on 3rd base, less than 2 outs. The hitter is a contact hitter who rarely strikes out.",
+          "question": "What's your primary focus in this situation?",
+          "options": [
+            {"id": "A", "text": "Strike him out to avoid the run scoring"},
+            {"id": "B", "text": "Keep the ball down to force a ground ball"},
+            {"id": "C", "text": "Work up in the zone to force a fly ball"},
+            {"id": "D", "text": "Attack the corners to avoid hard contact"}
+          ],
+          "correct": "B",
+          "explanation": "With a runner on 3rd and less than 2 outs, a fly ball scores the run. Against a contact hitter who won't strike out easily, work down in the zone for a ground ball. Even if he makes contact, you can turn two or prevent the run.",
+          "difficulty": "intermediate",
+          "tags": ["runner-on-third", "contact-hitter", "ground-ball", "situational-awareness"]
+        },
+        {
+          "id": "pitcher_situational_002",
+          "scenario": "Bases loaded, 2 outs, full count. Your team is ahead by 2 runs in the 8th inning.",
+          "question": "What's your approach on this critical pitch?",
+          "options": [
+            {"id": "A", "text": "Challenge with your best stuff - trust your ability"},
+            {"id": "B", "text": "Throw a competitive strike with reliable command"},
+            {"id": "C", "text": "Try to paint the corner for a strikeout"},
+            {"id": "D", "text": "Pitch around and walk him to face the next hitter"}
+          ],
+          "correct": "B",
+          "explanation": "On a full count with bases loaded, you must throw a strike. Don't try to be too fine and risk a walk (which forces in a run). Throw a competitive strike with a pitch you can command. Trust your stuff but prioritize the strike.",
+          "difficulty": "advanced",
+          "tags": ["bases-loaded", "full-count", "competitive-strike", "must-throw-strike"]
+        },
+        {
+          "id": "pitcher_situational_003",
+          "scenario": "Runner on 2nd base, 2 outs. The hitter is 0-for-3 tonight but is a .280 career hitter in RBI situations.",
+          "question": "How should this influence your approach?",
+          "options": [
+            {"id": "A", "text": "Attack aggressively - he's struggling tonight"},
+            {"id": "B", "text": "Pitch carefully - he's dangerous with RISP"},
+            {"id": "C", "text": "Attack but avoid the heart of the plate"},
+            {"id": "D", "text": "Walk him intentionally to face the next hitter"}
+          ],
+          "correct": "C",
+          "explanation": "Don't be fooled by one game's performance. A career .280 hitter with RISP is dangerous. Attack the strike zone to avoid walking him, but work the edges. Make him earn his hit rather than giving him something fat.",
+          "difficulty": "advanced",
+          "tags": ["risp", "career-stats", "situational-hitting", "2-outs"]
+        },
+        {
+          "id": "pitcher_situational_004",
+          "scenario": "Runners on 1st and 3rd, 1 out. Ground ball pitcher vs. a hitter who hits a lot of ground balls.",
+          "question": "What's your best strategy?",
+          "options": [
+            {"id": "A", "text": "Go for the strikeout to avoid any contact"},
+            {"id": "B", "text": "Work for a ground ball and hope for a double play"},
+            {"id": "C", "text": "Pitch up in the zone to force a pop up or fly ball"},
+            {"id": "D", "text": "Attack the corners to minimize hard contact"}
+          ],
+          "correct": "B",
+          "explanation": "This is an ideal double play situation. You're a ground ball pitcher facing a ground ball hitter with the infield in position. Work down in the zone and trust your defense to turn two and get you out of the inning.",
+          "difficulty": "intermediate",
+          "tags": ["double-play-situation", "ground-ball-pitcher", "runners-corners", "trust-defense"]
+        },
+        {
+          "id": "pitcher_situational_005",
+          "scenario": "Bottom 9th, your team trailing by 1. Bases empty, facing the heart of their lineup (3-4-5 hitters).",
+          "question": "What's your mindset in this situation?",
+          "options": [
+            {"id": "A", "text": "Challenge aggressively - you have nothing to lose"},
+            {"id": "B", "text": "Pitch backwards and keep them off balance"},
+            {"id": "C", "text": "Attack the strike zone but command your locations"},
+            {"id": "D", "text": "Work around the good hitters and pitch to weaker ones"}
+          ],
+          "correct": "C",
+          "explanation": "In a save situation, attack the zone with conviction but maintain your command. Don't give away free passes, but don't give in either. Make quality pitches in competitive locations and trust your stuff.",
+          "difficulty": "intermediate",
+          "tags": ["save-situation", "heart-of-lineup", "attack-zone", "command-locations"]
+        }
+      ]
+    },
+    "batter-tendencies": {
+      "description": "Hot zones, cold zones, situational hitting patterns, and scouting reports",
+      "questions": [
+        {
+          "id": "pitcher_tendencies_001",
+          "scenario": "Scouting report shows this hitter is .350 on first-pitch fastballs but .180 on first-pitch breaking balls.",
+          "question": "How does this information affect your approach?",
+          "options": [
+            {"id": "A", "text": "Always throw breaking balls first pitch"},
+            {"id": "B", "text": "Challenge with fastballs to test his ability"},
+            {"id": "C", "text": "Mix your first pitches but favor breaking balls"},
+            {"id": "D", "text": "Ignore the stats and pitch to your strengths"}
+          ],
+          "correct": "C",
+          "explanation": "Use the scouting report as a guide, not a rule. Favor breaking balls first pitch since he struggles with them, but still mix in some fastballs to keep him honest. Don't become too predictable.",
+          "difficulty": "intermediate",
+          "tags": ["scouting-report", "first-pitch", "breaking-balls", "tendency-exploitation"]
+        },
+        {
+          "id": "pitcher_tendencies_002",
+          "scenario": "The hitter's hot zone is middle-in, cold zone is low-and-away. You have pinpoint command tonight.",
+          "question": "What's your game plan against this hitter?",
+          "options": [
+            {"id": "A", "text": "Attack his hot zone with your best stuff"},
+            {"id": "B", "text": "Live in his cold zone exclusively"},
+            {"id": "C", "text": "Work primarily in cold zone, occasionally show hot zone"},
+            {"id": "D", "text": "Mix locations evenly to keep him guessing"}
+          ],
+          "correct": "C",
+          "explanation": "With good command, work primarily in his cold zone (low-away) but occasionally show the hot zone to prevent him from sitting on one location. Force him to cover the entire plate while exploiting his weakness.",
+          "difficulty": "advanced",
+          "tags": ["hot-zone", "cold-zone", "command", "location-mixing"]
+        },
+        {
+          "id": "pitcher_tendencies_003",
+          "scenario": "This hitter is 2-for-20 against your slider this season, but 8-for-15 against your fastball.",
+          "question": "How do you use this historical data?",
+          "options": [
+            {"id": "A", "text": "Throw only sliders - the numbers don't lie"},
+            {"id": "B", "text": "Use slider as your primary pitch but sequence with fastballs"},
+            {"id": "C", "text": "Ignore past results and execute your normal plan"},
+            {"id": "D", "text": "Work backwards from your usual pattern"}
+          ],
+          "correct": "B",
+          "explanation": "Your slider is clearly effective against him, so make it your primary weapon. But you still need to show fastballs to set up the slider and prevent him from sitting on one pitch. Use the fastball to set up your strength.",
+          "difficulty": "intermediate",
+          "tags": ["historical-data", "slider-effectiveness", "pitch-sequencing", "setup-pitches"]
+        },
+        {
+          "id": "pitcher_tendencies_004",
+          "scenario": "The hitter is known for being extremely aggressive on 2-0 and 3-1 counts, swinging at anything close.",
+          "question": "How do you approach hitter's counts against him?",
+          "options": [
+            {"id": "A", "text": "Challenge in the zone since he's swinging anyway"},
+            {"id": "B", "text": "Throw balls just off the plate to get him to chase"},
+            {"id": "C", "text": "Attack the zone but stay away from the heart of the plate"},
+            {"id": "D", "text": "Throw strikes but use your worst pitch"}
+          ],
+          "correct": "C",
+          "explanation": "Take advantage of his aggressiveness by throwing strikes, but avoid the heart of the plate. He's going to swing at borderline strikes, so make him hit your pitch in a tough location rather than something fat.",
+          "difficulty": "advanced",
+          "tags": ["aggressive-hitter", "hitters-counts", "borderline-strikes", "location-discipline"]
+        },
+        {
+          "id": "pitcher_tendencies_005",
+          "scenario": "Late in the game, this hitter has a tendency to look for one specific pitch in one location based on the count.",
+          "question": "What's your strategy to exploit this tendency?",
+          "options": [
+            {"id": "A", "text": "Give him exactly what he's looking for"},
+            {"id": "B", "text": "Avoid that count entirely"},
+            {"id": "C", "text": "Show him that pitch/location, then come back somewhere else"},
+            {"id": "D", "text": "Only use counts where he doesn't have a tendency"}
+          ],
+          "correct": "C",
+          "explanation": "Show him the pitch/location he's expecting to get him geared up for it, then come back with a different pitch or location. Use his own expectations against him by setting him up and then changing your approach.",
+          "difficulty": "advanced",
+          "tags": ["late-game", "count-specific", "expectation-management", "setup-strategy"]
+        }
+      ]
+    },
+    "game-state-awareness": {
+      "description": "Inning, score, base runners, and defensive positioning considerations",
+      "questions": [
+        {
+          "id": "pitcher_gamestate_001",
+          "scenario": "Top of the 1st inning, your team just scored 5 runs. You're facing the leadoff hitter in a 5-0 game.",
+          "question": "How should the big lead affect your approach?",
+          "options": [
+            {"id": "A", "text": "Attack aggressively - you can afford to give up runs"},
+            {"id": "B", "text": "Pitch the same way you always do"},
+            {"id": "C", "text": "Challenge in the zone and let your defense work"},
+            {"id": "D", "text": "Be more careful to maintain the shutout"}
+          ],
+          "correct": "C",
+          "explanation": "With a big lead, you can be more aggressive in the strike zone. Challenge hitters and let your defense make plays. Don't give away free passes, but don't be afraid of contact when you have run support.",
+          "difficulty": "intermediate",
+          "tags": ["big-lead", "run-support", "aggressive-approach", "challenge-zone"]
+        },
+        {
+          "id": "pitcher_gamestate_002",
+          "scenario": "7th inning of a 1-0 game. Your pitch count is at 95, and you've been dominant. The 8th and 9th place hitters are coming up.",
+          "question": "What should influence your approach most?",
+          "options": [
+            {"id": "A", "text": "Conserve pitches to stay in the game longer"},
+            {"id": "B", "text": "Attack aggressively against weaker hitters"},
+            {"id": "C", "text": "Pitch the same way that got you this far"},
+            {"id": "D", "text": "Work around them to face the leadoff hitter"}
+          ],
+          "correct": "B",
+          "explanation": "Against the bottom of the order with a high pitch count, attack the zone aggressively. These are your best chances for quick outs. Don't waste pitches - get efficient outs to extend your outing in a close game.",
+          "difficulty": "advanced",
+          "tags": ["pitch-count", "close-game", "bottom-order", "efficient-outs"]
+        },
+        {
+          "id": "pitcher_gamestate_003",
+          "scenario": "9th inning, you're protecting a 2-run lead. Your closer is unavailable, and this is your 4th inning of work.",
+          "question": "How do you approach this save situation?",
+          "options": [
+            {"id": "A", "text": "Reach back for extra velocity on every pitch"},
+            {"id": "B", "text": "Rely more on command and location"},
+            {"id": "C", "text": "Mix your pitches more to keep them off balance"},
+            {"id": "D", "text": "Attack with your best pitch repeatedly"}
+          ],
+          "correct": "B",
+          "explanation": "In your 4th inning of work, your stuff may be diminishing. Rely on command and location rather than trying to overpower hitters. Make quality pitches in good locations and trust your defense.",
+          "difficulty": "advanced",
+          "tags": ["save-situation", "fatigue", "command-over-stuff", "4th-inning-work"]
+        },
+        {
+          "id": "pitcher_gamestate_004",
+          "scenario": "Your team is down 8-2 in the 6th inning. You're the long reliever brought in to eat innings and preserve the bullpen.",
+          "question": "What's your primary objective?",
+          "options": [
+            {"id": "A", "text": "Keep the game close in case of a comeback"},
+            {"id": "B", "text": "Get through as many innings as possible"},
+            {"id": "C", "text": "Work on new pitches since the game is out of reach"},
+            {"id": "D", "text": "Challenge hitters and get quick outs"}
+          ],
+          "correct": "B",
+          "explanation": "In a blowout loss as the long man, your job is to eat innings and save the bullpen for future games. Work efficiently, throw strikes, and get through as many innings as possible to preserve other pitchers.",
+          "difficulty": "intermediate",
+          "tags": ["long-relief", "blowout-game", "eat-innings", "bullpen-preservation"]
+        },
+        {
+          "id": "pitcher_gamestate_005",
+          "scenario": "Bottom 9th, tie game, runner on 2nd with no outs. You're facing their best hitter (.320 avg, 25 HRs).",
+          "question": "What's your approach in this walk-off situation?",
+          "options": [
+            {"id": "A", "text": "Challenge him - don't give him the base"},
+            {"id": "B", "text": "Work around him to set up a double play"},
+            {"id": "C", "text": "Attack the zone but avoid his happy zones"},
+            {"id": "D", "text": "Intentionally walk him to face the next hitter"}
+          ],
+          "correct": "C",
+          "explanation": "You can't afford to walk their best hitter and put the winning run on first with no outs. Attack the zone but stay out of his wheelhouse. Make him beat a good pitch rather than giving him a free pass or a mistake pitch.",
+          "difficulty": "advanced",
+          "tags": ["walk-off-situation", "best-hitter", "winning-run", "attack-but-avoid"]
+        }
+      ]
+    },
+    "pitch-selection": {
+      "description": "Fastball counts vs breaking ball counts, out pitches, and situational pitch usage",
+      "questions": [
+        {
+          "id": "pitcher_pitchselect_001",
+          "scenario": "2-1 count against a hitter who sits on fastballs in hitter's counts. Your fastball and slider both have good command today.",
+          "question": "What's your best pitch selection?",
+          "options": [
+            {"id": "A", "text": "Fastball - it's a fastball count"},
+            {"id": "B", "text": "Slider - he's not expecting it"},
+            {"id": "C", "text": "Whichever pitch has better location today"},
+            {"id": "D", "text": "Changeup to completely change speeds"}
+          ],
+          "correct": "B",
+          "explanation": "If he sits on fastballs in hitter's counts and your slider has good command, use his expectation against him. A well-located slider in a 2-1 count can be very effective when he's geared up for a fastball.",
+          "difficulty": "advanced",
+          "tags": ["2-1-count", "hitters-count", "expectation-breaking", "slider-command"]
+        },
+        {
+          "id": "pitcher_pitchselect_002",
+          "scenario": "0-2 count, and your curveball has been your best strikeout pitch today. The hitter has looked overmatched against it.",
+          "question": "How do you approach this put-away situation?",
+          "options": [
+            {"id": "A", "text": "Throw the curveball in the zone for a strike"},
+            {"id": "B", "text": "Bounce the curveball - make him chase"},
+            {"id": "C", "text": "Challenge with your fastball instead"},
+            {"id": "D", "text": "Change speeds with a changeup"}
+          ],
+          "correct": "B",
+          "explanation": "With an 0-2 count and the hitter overmatched by your curveball, you can afford to waste a pitch. Bounce it and see if he chases. If he doesn't, you're still ahead 1-2 with your best pitch working.",
+          "difficulty": "intermediate",
+          "tags": ["0-2-count", "out-pitch", "waste-pitch", "chase-situation"]
+        },
+        {
+          "id": "pitcher_pitchselect_003",
+          "scenario": "3-2 count, bases empty. The hitter is protecting the plate and will swing at anything close. You have four pitches with good command.",
+          "question": "What should guide your pitch selection?",
+          "options": [
+            {"id": "A", "text": "Your best strikeout pitch"},
+            {"id": "B", "text": "Your most reliable strike-throwing pitch"},
+            {"id": "C", "text": "The pitch he's least expecting"},
+            {"id": "D", "text": "Your fastest pitch to overpower him"}
+          ],
+          "correct": "B",
+          "explanation": "On a full count, you must throw a strike. Use your most reliable pitch for finding the zone. Since he's protecting and will swing at strikes, prioritize throwing a strike over trying to fool him.",
+          "difficulty": "beginner",
+          "tags": ["full-count", "protecting-plate", "reliable-strike", "must-throw-strike"]
+        },
+        {
+          "id": "pitcher_pitchselect_004",
+          "scenario": "1-0 count, runner on first. This hitter hits your fastball well but struggles with off-speed pitches. Your changeup has been sharp today.",
+          "question": "What's your pitch selection strategy?",
+          "options": [
+            {"id": "A", "text": "Challenge with your fastball despite his success"},
+            {"id": "B", "text": "Go with your changeup since it's working"},
+            {"id": "C", "text": "Mix both pitches equally"},
+            {"id": "D", "text": "Use fastball to set up the changeup"}
+          ],
+          "correct": "D",
+          "explanation": "Even though he hits your fastball well, you need to show it to make your changeup effective. The changeup works best when set up by the fastball. Show him the fastball first, then come back with the changeup.",
+          "difficulty": "advanced",
+          "tags": ["setup-pitch", "changeup-effectiveness", "pitch-combination", "sequencing"]
+        },
+        {
+          "id": "pitcher_pitchselect_005",
+          "scenario": "Two strikes, runner on third with less than 2 outs. You want to avoid a wild pitch or passed ball.",
+          "question": "Which pitch gives you the best combination of effectiveness and control?",
+          "options": [
+            {"id": "A", "text": "Your sharpest breaking ball for the strikeout"},
+            {"id": "B", "text": "Fastball - it's your most controlled pitch"},
+            {"id": "C", "text": "Changeup - less likely to get away from the catcher"},
+            {"id": "D", "text": "Whatever pitch has been most effective today"}
+          ],
+          "correct": "C",
+          "explanation": "With a runner on third and less than 2 outs, avoid wild pitches that score the run. A changeup is typically easier for catchers to handle than breaking balls and can still generate swings and misses without the risk of bouncing.",
+          "difficulty": "intermediate",
+          "tags": ["runner-on-third", "wild-pitch-avoidance", "changeup-control", "catcher-friendly"]
+        }
+      ]
+    }
+  }
+}
