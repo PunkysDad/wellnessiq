@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Modal, TouchableOpacity, Linking } from 'react-native';
+import { View, Text, Pressable, StyleSheet, Modal, TouchableOpacity, Linking } from 'react-native';
 import { MaterialIcons as Icon } from '@expo/vector-icons';
 import { appTheme } from '../theme/appTheme';
 
@@ -81,19 +81,23 @@ export default function TrialLimitModal({ visible, limitType, modalType = 'trial
           </TouchableOpacity>
 
           <View style={styles.legalLinks}>
-            <Text
-              style={styles.legalLinkText}
-              onPress={() => Linking.openURL('https://wellnessiq-app.info/privacy.html')}
+            <Pressable 
+              onPress={() => {
+                console.log('Privacy Policy pressed');
+                Linking.openURL('https://wellnessiq-app.info/privacy.html');
+              }}
             >
-              Privacy Policy
-            </Text>
+              <Text style={styles.legalLinkText}>Privacy Policy</Text>
+            </Pressable>
             <Text style={styles.legalDivider}>|</Text>
-            <Text
-              style={styles.legalLinkText}
-              onPress={() => Linking.openURL('https://wellnessiq-app.info/terms.html')}
+            <Pressable 
+              onPress={() => {
+                console.log('Terms of Use pressed');
+                Linking.openURL('https://wellnessiq-app.info/terms.html');
+              }}
             >
-              Terms of Use
-            </Text>
+              <Text style={styles.legalLinkText}>Terms of Use</Text>
+            </Pressable>
           </View>
         </View>
       </View>

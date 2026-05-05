@@ -442,14 +442,14 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ user, onComplete
             <View style={styles.legalLinks}>
               <Text
                 style={styles.legalLinkText}
-                onPress={() => Linking.openURL('https://wellnessiqapp.info/privacy.html')}
+                onPress={() => Linking.openURL('https://wellnessiq-app.info/privacy.html')}
               >
                 Privacy Policy
               </Text>
               <Text style={styles.legalDivider}>|</Text>
               <Text
                 style={styles.legalLinkText}
-                onPress={() => Linking.openURL('https://wellnessiqapp.info/terms.html')}
+                onPress={() => Linking.openURL('https://wellnessiq-app.info/terms.html')}
               >
                 Terms of Use
               </Text>
