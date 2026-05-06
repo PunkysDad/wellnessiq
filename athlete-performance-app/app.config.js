@@ -28,7 +28,8 @@ export default {
       infoPlist: {
         ITSAppUsesNonExemptEncryption: false,
         UIDeviceFamily: [1],
-        UIUserInterfaceStyle: "Dark"
+        UIUserInterfaceStyle: "Dark",
+        UIRequiresFullScreen: true
       }
     },
     android: {
