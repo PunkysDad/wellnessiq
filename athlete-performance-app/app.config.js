@@ -19,7 +19,7 @@ export default {
       "**/*"
     ],
     ios: {
-      supportsTablet: true,
+      supportsTablet: false,
       bundleIdentifier: "com.justinbooth.wellnessiq",
       googleServicesFile: "./GoogleService-Info.plist",
       runtimeVersion: "1.0.0",
