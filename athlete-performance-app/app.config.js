@@ -29,7 +29,13 @@ export default {
         ITSAppUsesNonExemptEncryption: false,
         UIDeviceFamily: [1],
         UIUserInterfaceStyle: "Dark",
-        UIRequiresFullScreen: true
+        UIRequiresFullScreen: true,
+        UISupportedInterfaceOrientations: [
+          "UIInterfaceOrientationPortrait",
+          "UIInterfaceOrientationPortraitUpsideDown",
+          "UIInterfaceOrientationLandscapeLeft",
+          "UIInterfaceOrientationLandscapeRight"
+        ]
       }
     },
     android: {
