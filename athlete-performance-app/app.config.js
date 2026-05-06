@@ -6,7 +6,7 @@ export default {
     name: "WellnessIQ",
     slug: "wellnessiq-app", 
     version: "1.0.0",
-    orientation: "portrait",
+    orientation: "default",
     jsEngine: 'hermes',
     newArchEnabled: true,
     updates: {
