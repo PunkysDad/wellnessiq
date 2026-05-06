@@ -26,7 +26,9 @@ export default {
       usesAppleSignIn: true,
       icon: "./assets/icon.png",
       infoPlist: {
-        ITSAppUsesNonExemptEncryption: false
+        ITSAppUsesNonExemptEncryption: false,
+        UIDeviceFamily: [1],
+        UIUserInterfaceStyle: "Dark"
       }
     },
     android: {
