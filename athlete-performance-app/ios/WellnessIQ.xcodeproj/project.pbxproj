@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B597471B41608197437E977 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 63B8CD9228D901CF2ADA445B /* PrivacyInfo.xcprivacy */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		7B28D34A240B488384AF2722 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD105E9B41B54422A4B90C4B /* GoogleService-Info.plist */; };
-		8E013D630E41B5B0B587A90D /* Pods_WellnessIQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C6C1E5788A5E8FC4DDA89A /* Pods_WellnessIQ.framework */; };
+		441AFCD2A77E4D1557D1A1BD /* Pods_WellnessIQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD33C8A4E4477256112D346 /* Pods_WellnessIQ.framework */; };
+		83C5F33A2569419C84A86A6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D610587924441EA8A49F50 /* GoogleService-Info.plist */; };
+		900C3C67D5B1805186FE6411 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6471BF153CB36CF0C8BFBC44 /* ExpoModulesProvider.swift */; };
+		B93F24DBCC58C38145D1B740 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1888F9DF4D05C8D08941122C /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		D99B050034B6746BA71D372F /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC51D087FB2D826ADC5765 /* ExpoModulesProvider.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1327F211BA0B51E1EA87B963 /* Pods-WellnessIQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellnessIQ.debug.xcconfig"; path = "Target Support Files/Pods-WellnessIQ/Pods-WellnessIQ.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* WellnessIQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellnessIQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WellnessIQ/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WellnessIQ/Info.plist; sourceTree = "<group>"; };
-		63B8CD9228D901CF2ADA445B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = WellnessIQ/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		6CEDF1B7E8C9901F0AE35286 /* Pods-WellnessIQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellnessIQ.release.xcconfig"; path = "Target Support Files/Pods-WellnessIQ/Pods-WellnessIQ.release.xcconfig"; sourceTree = "<group>"; };
-		7A084F1E95D89D17B56A515D /* Pods-WellnessIQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellnessIQ.debug.xcconfig"; path = "Target Support Files/Pods-WellnessIQ/Pods-WellnessIQ.debug.xcconfig"; sourceTree = "<group>"; };
+		1888F9DF4D05C8D08941122C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = WellnessIQ/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		52D610587924441EA8A49F50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "WellnessIQ/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6471BF153CB36CF0C8BFBC44 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-WellnessIQ/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		693FC7DB0CB4B3C0839AE74D /* Pods-WellnessIQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellnessIQ.release.xcconfig"; path = "Target Support Files/Pods-WellnessIQ/Pods-WellnessIQ.release.xcconfig"; sourceTree = "<group>"; };
+		7FD33C8A4E4477256112D346 /* Pods_WellnessIQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WellnessIQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = WellnessIQ/SplashScreen.storyboard; sourceTree = "<group>"; };
-		B5AC51D087FB2D826ADC5765 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-WellnessIQ/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		DD105E9B41B54422A4B90C4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "WellnessIQ/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = WellnessIQ/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* WellnessIQ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WellnessIQ-Bridging-Header.h"; path = "WellnessIQ/WellnessIQ-Bridging-Header.h"; sourceTree = "<group>"; };
-		F5C6C1E5788A5E8FC4DDA89A /* Pods_WellnessIQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WellnessIQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,13 +39,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E013D630E41B5B0B587A90D /* Pods_WellnessIQ.framework in Frameworks */,
+				441AFCD2A77E4D1557D1A1BD /* Pods_WellnessIQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0965EBDC2A371BF40B31BAE1 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				344D1BE6F78ED60EA71CAD76 /* WellnessIQ */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* WellnessIQ */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,37 +63,37 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				DD105E9B41B54422A4B90C4B /* GoogleService-Info.plist */,
-				63B8CD9228D901CF2ADA445B /* PrivacyInfo.xcprivacy */,
+				52D610587924441EA8A49F50 /* GoogleService-Info.plist */,
+				1888F9DF4D05C8D08941122C /* PrivacyInfo.xcprivacy */,
 			);
 			name = WellnessIQ;
-			sourceTree = "<group>";
-		};
-		25B1ADAD2FA7DA095BA60465 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7A084F1E95D89D17B56A515D /* Pods-WellnessIQ.debug.xcconfig */,
-				6CEDF1B7E8C9901F0AE35286 /* Pods-WellnessIQ.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				F5C6C1E5788A5E8FC4DDA89A /* Pods_WellnessIQ.framework */,
+				7FD33C8A4E4477256112D346 /* Pods_WellnessIQ.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6E9B2069FEB4DB2A781FFFC4 /* ExpoModulesProviders */ = {
+		344D1BE6F78ED60EA71CAD76 /* WellnessIQ */ = {
 			isa = PBXGroup;
 			children = (
-				C6E58B502DAFE1ED616E2F67 /* WellnessIQ */,
+				6471BF153CB36CF0C8BFBC44 /* ExpoModulesProvider.swift */,
 			);
-			name = ExpoModulesProviders;
+			name = WellnessIQ;
+			sourceTree = "<group>";
+		};
+		701BDBAC1EE9BF0E545F3CA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1327F211BA0B51E1EA87B963 /* Pods-WellnessIQ.debug.xcconfig */,
+				693FC7DB0CB4B3C0839AE74D /* Pods-WellnessIQ.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -102,8 +110,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				25B1ADAD2FA7DA095BA60465 /* Pods */,
-				6E9B2069FEB4DB2A781FFFC4 /* ExpoModulesProviders */,
+				701BDBAC1EE9BF0E545F3CA5 /* Pods */,
+				0965EBDC2A371BF40B31BAE1 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -127,14 +135,6 @@
 			path = WellnessIQ/Supporting;
 			sourceTree = "<group>";
 		};
-		C6E58B502DAFE1ED616E2F67 /* WellnessIQ */ = {
-			isa = PBXGroup;
-			children = (
-				B5AC51D087FB2D826ADC5765 /* ExpoModulesProvider.swift */,
-			);
-			name = WellnessIQ;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,13 +143,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WellnessIQ" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				6119CDDA72383419F749A37D /* [Expo] Configure project */,
+				11E6D8D3151050D8B5129729 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				496648B15CF469FA0088DEFC /* [CP] Embed Pods Frameworks */,
+				673111B8607BC83DC9D01C11 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,8 +199,8 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				7B28D34A240B488384AF2722 /* GoogleService-Info.plist in Resources */,
-				0B597471B41608197437E977 /* PrivacyInfo.xcprivacy in Resources */,
+				83C5F33A2569419C84A86A6C /* GoogleService-Info.plist in Resources */,
+				B93F24DBCC58C38145D1B740 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,29 +246,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		496648B15CF469FA0088DEFC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WellnessIQ/Pods-WellnessIQ-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/React-Core-prebuilt/React.framework/React",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ReactNativeDependencies/ReactNativeDependencies.framework/ReactNativeDependencies",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactNativeDependencies.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WellnessIQ/Pods-WellnessIQ-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6119CDDA72383419F749A37D /* [Expo] Configure project */ = {
+		11E6D8D3151050D8B5129729 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -291,6 +269,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-WellnessIQ/expo-configure-project.sh\"\n";
+		};
+		673111B8607BC83DC9D01C11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WellnessIQ/Pods-WellnessIQ-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/React-Core-prebuilt/React.framework/React",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ReactNativeDependencies/ReactNativeDependencies.framework/ReactNativeDependencies",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactNativeDependencies.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WellnessIQ/Pods-WellnessIQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -360,7 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				D99B050034B6746BA71D372F /* ExpoModulesProvider.swift in Sources */,
+				900C3C67D5B1805186FE6411 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +369,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A084F1E95D89D17B56A515D /* Pods-WellnessIQ.debug.xcconfig */;
+			baseConfigurationReference = 1327F211BA0B51E1EA87B963 /* Pods-WellnessIQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -405,7 +405,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CEDF1B7E8C9901F0AE35286 /* Pods-WellnessIQ.release.xcconfig */;
+			baseConfigurationReference = 693FC7DB0CB4B3C0839AE74D /* Pods-WellnessIQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

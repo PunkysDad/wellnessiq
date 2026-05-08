@@ -1,0 +1,49 @@
+<svg width="1024" height="1024" viewBox="0 0 680 680" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>WellnessIQ App Icon</title>
+  <desc>WellnessIQ app icon with heartbeat pulse on dark navy background</desc>
+  <style>
+    .bg { fill: #0D0B1E; }
+    .orb1 { fill: #7C3AED; opacity: 0.25; }
+    .orb2 { fill: #39FF14; opacity: 0.12; }
+    .ring { fill: none; stroke: #7C3AED; stroke-width: 3; opacity: 0.3; }
+    .pulse { fill: none; stroke: #39FF14; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    .white { fill: #FFFFFF; }
+    .green { fill: #39FF14; }
+  </style>
+
+  <rect width="680" height="680" rx="140" class="bg"/>
+
+  <circle cx="560" cy="100" r="180" class="orb1"/>
+  <circle cx="100" cy="600" r="160" class="orb2"/>
+
+  <circle cx="340" cy="260" r="210" class="ring"/>
+
+  <text x="340" y="200"
+    font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif"
+    font-size="88"
+    font-weight="900"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="-2"
+    class="white">Wellness</text>
+
+  <text x="340" y="310"
+    font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif"
+    font-size="120"
+    font-weight="900"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="6"
+    class="green">IQ</text>
+
+  <polyline class="pulse" points="60,450 130,450 165,385 200,515 235,370 270,500 305,435 375,435 410,450 475,450 510,395 545,505 580,450 640,450"/>
+
+  <text x="340" y="590"
+    font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif"
+    font-size="36"
+    font-weight="500"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="6"
+    style="fill: rgba(255,255,255,0.45);">AI HEALTH COACH</text>
+</svg>
