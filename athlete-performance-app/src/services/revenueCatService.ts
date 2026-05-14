@@ -15,8 +15,8 @@ export const SUBSCRIPTION_PRODUCTS = {
 };
 
 export const ENTITLEMENTS = {
-  BASIC:   'wellnessiq_basic',
-  PREMIUM: 'wellnessiq_premium',
+  BASIC:   'wellnessiq_basic_v2',
+  PREMIUM: 'wellnessiq_premium_v2',
 };
 
 export interface SubscriptionInfo {
