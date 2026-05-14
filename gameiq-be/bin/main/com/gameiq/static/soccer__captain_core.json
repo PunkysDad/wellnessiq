@@ -1,0 +1,486 @@
+{
+  "position": "captain",
+  "sport": "soccer",
+  "categories": {
+    "formation-recognition": {
+      "description": "Identifying 4-4-2, 4-3-3, 3-5-2, and pressing triggers",
+      "questions": [
+        {
+          "id": "captain_formation_001",
+          "scenario": "The opposing team lines up with 4 defenders, 3 central midfielders in a line, and 3 forwards. Their wingers are staying wide and high.",
+          "question": "What formation are they playing and how should you adjust?",
+          "options": [
+            {"id": "A", "text": "4-3-3 - compress the midfield to match their numbers"},
+            {"id": "B", "text": "4-4-2 - spread wide to counter their width"},
+            {"id": "C", "text": "3-5-2 - drop deeper to prevent through balls"},
+            {"id": "D", "text": "4-2-3-1 - press their playmaker"}
+          ],
+          "correct": "A",
+          "explanation": "This is a classic 4-3-3 formation. With 3 central midfielders, they'll dominate the middle if you don't match numbers. Compress your midfield to contest possession and prevent them from playing through the center.",
+          "difficulty": "intermediate",
+          "tags": ["4-3-3", "midfield-numbers", "central-control", "formation-adjustment"]
+        },
+        {
+          "id": "captain_formation_002",
+          "scenario": "You notice the opposition has 3 center backs, 2 wing-backs pushing high, 3 central midfielders, and 2 strikers.",
+          "question": "What formation is this and what's your biggest concern?",
+          "options": [
+            {"id": "A", "text": "3-5-2 - their wing-backs will create overloads wide"},
+            {"id": "B", "text": "5-3-2 - they're playing very defensively"},
+            {"id": "C", "text": "4-3-3 - their forwards will stretch us"},
+            {"id": "D", "text": "3-4-3 - they'll dominate possession"}
+          ],
+          "correct": "A",
+          "explanation": "This is a 3-5-2 formation. The wing-backs pushing high create numerical advantages on the flanks (overloads). Your main concern is tracking these runs and preventing 2v1 situations against your fullbacks.",
+          "difficulty": "advanced",
+          "tags": ["3-5-2", "wing-back-overloads", "flank-advantage", "tracking-runs"]
+        },
+        {
+          "id": "captain_formation_003",
+          "scenario": "The opposing team starts in a 4-4-2, but when they lose the ball, their two strikers immediately press your center backs while their midfield line moves up.",
+          "question": "What pressing trigger are they using?",
+          "options": [
+            {"id": "A", "text": "Time-based press - after 5 seconds"},
+            {"id": "B", "text": "Positional press - when ball goes to center backs"},
+            {"id": "C", "text": "Transition press - immediately upon losing possession"},
+            {"id": "D", "text": "Sideline press - when ball goes to touchline"}
+          ],
+          "correct": "B",
+          "explanation": "This is a positional pressing trigger. They're specifically targeting your center backs to force long balls or mistakes. When the ball reaches your CBs, their forwards press to cut off short passing options.",
+          "difficulty": "advanced",
+          "tags": ["positional-press", "center-back-press", "pressing-trigger", "force-long-balls"]
+        },
+        {
+          "id": "captain_formation_004",
+          "scenario": "In the first 15 minutes, you observe that when your team has possession, the opponents drop into a compact 4-5-1 shape, but when they have the ball, they quickly transition to 4-3-3.",
+          "question": "How should you communicate this to your team?",
+          "options": [
+            {"id": "A", "text": "They're playing two different formations - adapt accordingly"},
+            {"id": "B", "text": "Focus on their attacking 4-3-3 shape only"},
+            {"id": "C", "text": "It's the same players, just different phases"},
+            {"id": "D", "text": "They're confused - exploit the transitions"}
+          ],
+          "correct": "C",
+          "explanation": "This is normal phase-based formation change. Same 11 players, different positioning in possession vs. out of possession. Help your team understand it's about phase, not confusion, so they can adjust their movement and positioning accordingly.",
+          "difficulty": "intermediate",
+          "tags": ["phase-based", "possession-phases", "4-5-1-defensive", "4-3-3-attacking"]
+        },
+        {
+          "id": "captain_formation_005",
+          "scenario": "The opposing team is playing a 4-2-3-1, but their two holding midfielders keep dropping between the center backs, creating a back 5 in possession.",
+          "question": "What tactical adjustment should you make?",
+          "options": [
+            {"id": "A", "text": "Press their center backs harder"},
+            {"id": "B", "text": "Man-mark their attacking midfielder"},
+            {"id": "C", "text": "Push your forwards higher to pressure the dropping midfielders"},
+            {"id": "D", "text": "Sit deeper and wait for them to commit forward"}
+          ],
+          "correct": "C",
+          "explanation": "When their holding midfielders drop to create a back 5, push your forwards higher to pressure them. This prevents them from having easy time on the ball and forces quicker decisions or longer passes.",
+          "difficulty": "advanced",
+          "tags": ["dropping-midfielders", "back-5", "forward-pressure", "time-on-ball"]
+        }
+      ]
+    },
+    "tactical-switches": {
+      "description": "High press, low block, possession vs counter-attack transitions",
+      "questions": [
+        {
+          "id": "captain_tactical_001",
+          "scenario": "Your team has been pressing high for 60 minutes but energy levels are dropping and you're getting beaten by long balls over the top.",
+          "question": "What tactical adjustment should you make?",
+          "options": [
+            {"id": "A", "text": "Press even higher to win the ball quicker"},
+            {"id": "B", "text": "Switch to a mid-block and press in their half"},
+            {"id": "C", "text": "Drop into a low block and counter-attack"},
+            {"id": "D", "text": "Keep pressing but rotate players more"}
+          ],
+          "correct": "B",
+          "explanation": "When tired and getting beaten by long balls, switch to a mid-block. Press in their half rather than your own half - you still win the ball in good areas but have more protection against through balls.",
+          "difficulty": "advanced",
+          "tags": ["energy-management", "mid-block", "press-adjustment", "through-ball-protection"]
+        },
+        {
+          "id": "captain_tactical_002",
+          "scenario": "You're leading 2-0 with 20 minutes left, but the opposition is dominating possession and creating chances.",
+          "question": "What's your best tactical approach?",
+          "options": [
+            {"id": "A", "text": "Sit deeper and absorb pressure"},
+            {"id": "B", "text": "Keep playing the same way - it got you the lead"},
+            {"id": "C", "text": "Press higher to win the ball back quickly"},
+            {"id": "D", "text": "Switch to man-marking their key players"}
+          ],
+          "correct": "A",
+          "explanation": "With a 2-goal lead and 20 minutes left, sitting deeper makes sense. Absorb their pressure, stay compact, and look for counter-attacks. Protect your lead rather than chasing a third goal and leaving yourself exposed.",
+          "difficulty": "intermediate",
+          "tags": ["protect-lead", "absorb-pressure", "low-block", "counter-attack"]
+        },
+        {
+          "id": "captain_tactical_003",
+          "scenario": "Your team is trailing 1-0 with 15 minutes left. You've been playing a possession-based game but haven't created many clear chances.",
+          "question": "What tactical change should you consider?",
+          "options": [
+            {"id": "A", "text": "Keep possession - eventually you'll break them down"},
+            {"id": "B", "text": "Switch to more direct play and crosses"},
+            {"id": "C", "text": "Bring on more attacking players and push forward"},
+            {"id": "D", "text": "Press higher to win the ball in dangerous areas"}
+          ],
+          "correct": "B",
+          "explanation": "When possession play isn't creating chances and time is running out, switch to more direct play. Get balls into the box, create second balls, and force the issue rather than passing sideways.",
+          "difficulty": "intermediate",
+          "tags": ["trailing", "time-pressure", "direct-play", "create-chances"]
+        },
+        {
+          "id": "captain_tactical_004",
+          "scenario": "The opposition just scored and immediately switched from a defensive 5-4-1 to an attacking 3-5-2, pushing more players forward.",
+          "question": "How should you respond to this tactical shift?",
+          "options": [
+            {"id": "A", "text": "Match their formation with 3-5-2"},
+            {"id": "B", "text": "Exploit the space they've left behind"},
+            {"id": "C", "text": "Sit back and let them come at you"},
+            {"id": "D", "text": "Press them immediately while they're transitioning"}
+          ],
+          "correct": "B",
+          "explanation": "When they push more players forward after scoring, they leave space in behind. Look to exploit this space with quick transitions and through balls. Their confidence might make them vulnerable to counter-attacks.",
+          "difficulty": "advanced",
+          "tags": ["exploit-space", "tactical-transition", "counter-opportunity", "overcommitment"]
+        },
+        {
+          "id": "captain_tactical_005",
+          "scenario": "Your team is playing well in possession but struggling to break down a compact 5-4-1 defensive block.",
+          "question": "What tactical adjustment would be most effective?",
+          "options": [
+            {"id": "A", "text": "Play wider to stretch their defensive block"},
+            {"id": "B", "text": "Play more through balls to get in behind"},
+            {"id": "C", "text": "Use more crosses from wide areas"},
+            {"id": "D", "text": "Increase the tempo and play quicker passes"}
+          ],
+          "correct": "A",
+          "explanation": "Against a compact 5-4-1, width is key. Stretch their defensive block horizontally to create gaps and spaces in the middle. Once you've stretched them wide, you can play through the gaps or switch play.",
+          "difficulty": "intermediate",
+          "tags": ["compact-defense", "5-4-1", "stretch-block", "create-width"]
+        }
+      ]
+    },
+    "set-piece-organization": {
+      "description": "Free kicks, corners, defensive shape, and attacking set pieces",
+      "questions": [
+        {
+          "id": "captain_setpiece_001",
+          "scenario": "You're defending a corner kick. The opposing team has tall players in the box and good delivery from the corner taker.",
+          "question": "What's your primary organizational focus?",
+          "options": [
+            {"id": "A", "text": "Mark their best headers man-to-man"},
+            {"id": "B", "text": "Set up a zonal marking system"},
+            {"id": "C", "text": "Mix of zonal and man-marking"},
+            {"id": "D", "text": "Press the corner taker to prevent good delivery"}
+          ],
+          "correct": "C",
+          "explanation": "A mixed system often works best - zonal marking to cover dangerous areas (near post, penalty spot, far post) with man-marking on their best aerial threats. This combines the benefits of both systems.",
+          "difficulty": "advanced",
+          "tags": ["corner-defense", "mixed-marking", "aerial-threats", "dangerous-areas"]
+        },
+        {
+          "id": "captain_setpiece_002",
+          "scenario": "Your team has a free kick 25 yards from goal, central position. The wall is set, but you notice the goalkeeper is positioned to his left, leaving the right side less protected.",
+          "question": "How should you communicate the opportunity?",
+          "options": [
+            {"id": "A", "text": "Tell the taker to go for the right side of the goal"},
+            {"id": "B", "text": "Keep quiet so the keeper doesn't adjust"},
+            {"id": "C", "text": "Use coded language to communicate the opportunity"},
+            {"id": "D", "text": "Move players to distract the goalkeeper"}
+          ],
+          "correct": "C",
+          "explanation": "Use pre-planned coded language that your team understands but the opposition doesn't. This allows you to communicate the opportunity without alerting the goalkeeper to adjust his position.",
+          "difficulty": "intermediate",
+          "tags": ["free-kick", "goalkeeper-positioning", "coded-communication", "opportunity-identification"]
+        },
+        {
+          "id": "captain_setpiece_003",
+          "scenario": "Defending a free kick 30 yards out. The opposition has players both in front and behind your wall.",
+          "question": "What's the biggest danger you need to organize against?",
+          "options": [
+            {"id": "A", "text": "Direct shot over the wall"},
+            {"id": "B", "text": "Players running around the wall"},
+            {"id": "C", "text": "Short free kick to create a shooting angle"},
+            {"id": "D", "text": "Cross to the back post"}
+          ],
+          "correct": "B",
+          "explanation": "Players running around the wall create the most dangerous situations - they can get in behind the defensive line or create confusion. Organize players to track these runs and communicate who goes with whom.",
+          "difficulty": "advanced",
+          "tags": ["wall-defense", "tracking-runs", "player-movement", "defensive-communication"]
+        },
+        {
+          "id": "captain_setpiece_004",
+          "scenario": "Your team has a corner kick. You notice their defender usually marks the near post area very tightly.",
+          "question": "What attacking strategy should you employ?",
+          "options": [
+            {"id": "A", "text": "Avoid the near post area completely"},
+            {"id": "B", "text": "Overload the near post to create chaos"},
+            {"id": "C", "text": "Use the near post as a decoy and hit the back post"},
+            {"id": "D", "text": "Play short corners only"}
+          ],
+          "correct": "C",
+          "explanation": "If they mark the near post tightly, use it as a decoy. Send players there to occupy defenders, then deliver to the back post or penalty spot where you'll have better chances of winning the ball.",
+          "difficulty": "intermediate",
+          "tags": ["corner-attack", "decoy-runs", "back-post", "create-space"]
+        },
+        {
+          "id": "captain_setpiece_005",
+          "scenario": "You have a throw-in deep in the attacking third. The opposition is not well organized and some of their players are out of position.",
+          "question": "How should you capitalize on this set piece opportunity?",
+          "options": [
+            {"id": "A", "text": "Take it quickly before they can organize"},
+            {"id": "B", "text": "Call players forward for a long throw"},
+            {"id": "C", "text": "Keep possession and build up slowly"},
+            {"id": "D", "text": "Look for the overlap from your fullback"}
+          ],
+          "correct": "A",
+          "explanation": "When the opposition is disorganized, take the throw-in quickly to capitalize on their poor positioning. Quick restarts often create the best chances from set pieces when the defense isn't set.",
+          "difficulty": "beginner",
+          "tags": ["quick-throw", "disorganized-defense", "capitalize-opportunity", "attacking-third"]
+        }
+      ]
+    },
+    "game-state-management": {
+      "description": "Leading, trailing, man up/down situations, and momentum shifts",
+      "questions": [
+        {
+          "id": "captain_gamestate_001",
+          "scenario": "Your team is leading 1-0 in the 75th minute, but the opposition is creating more chances and your players look tired.",
+          "question": "What's your approach as captain?",
+          "options": [
+            {"id": "A", "text": "Encourage more attacking to get a second goal"},
+            {"id": "B", "text": "Organize a more compact defensive shape"},
+            {"id": "C", "text": "Keep the same tactics that got you the lead"},
+            {"id": "D", "text": "Make early substitutions for fresh legs"}
+          ],
+          "correct": "B",
+          "explanation": "With tired players and increasing pressure, organize a more compact defensive shape. Protect your lead by making it harder for them to create chances, and look for counter-attack opportunities.",
+          "difficulty": "intermediate",
+          "tags": ["protect-lead", "tired-players", "compact-defense", "75th-minute"]
+        },
+        {
+          "id": "captain_gamestate_002",
+          "scenario": "Your opponent receives a red card in the 35th minute, leaving them with 10 men for most of the game.",
+          "question": "How should you adjust your team's approach?",
+          "options": [
+            {"id": "A", "text": "Attack immediately while they're disorganized"},
+            {"id": "B", "text": "Be patient and wear them down with possession"},
+            {"id": "C", "text": "Keep the same formation and intensity"},
+            {"id": "D", "text": "Focus on one flank to overload their weakness"}
+          ],
+          "correct": "B",
+          "explanation": "Against 10 men for 55+ minutes, patience is key. Use possession to tire them out, move them around, and create gaps. Don't rush - you have numerical advantage and time on your side.",
+          "difficulty": "advanced",
+          "tags": ["man-advantage", "35th-minute", "patience", "possession-game"]
+        },
+        {
+          "id": "captain_gamestate_003",
+          "scenario": "Your team is trailing 2-0 at halftime. The players look dejected and are arguing with each other.",
+          "question": "What's your priority as captain in the dressing room?",
+          "options": [
+            {"id": "A", "text": "Focus purely on tactical changes for the second half"},
+            {"id": "B", "text": "Address the team's mentality and unity first"},
+            {"id": "C", "text": "Let the coach handle everything"},
+            {"id": "D", "text": "Plan individual conversations after the game"}
+          ],
+          "correct": "B",
+          "explanation": "When players are dejected and arguing, mentality and unity come before tactics. Address the negative atmosphere, bring the team together, and restore belief before discussing tactical adjustments.",
+          "difficulty": "intermediate",
+          "tags": ["trailing-2-0", "team-mentality", "unity", "captain-leadership"]
+        },
+        {
+          "id": "captain_gamestate_004",
+          "scenario": "The game is tied 1-1 in the 85th minute. Your team just survived a sustained period of pressure and won the ball back.",
+          "question": "What should you communicate to your team?",
+          "options": [
+            {"id": "A", "text": "Go forward quickly for the winner"},
+            {"id": "B", "text": "Keep possession and run down the clock"},
+            {"id": "C", "text": "Stay calm and play smart - look for the opportunity"},
+            {"id": "D", "text": "Get the ball wide and win corners"}
+          ],
+          "correct": "C",
+          "explanation": "In a tight game late on, after surviving pressure, keep players calm and focused. Look for good opportunities but don't force plays. Smart decision-making is crucial in these moments.",
+          "difficulty": "advanced",
+          "tags": ["tied-game", "85th-minute", "post-pressure", "smart-decisions"]
+        },
+        {
+          "id": "captain_gamestate_005",
+          "scenario": "Your team receives a red card in the 20th minute when leading 1-0. You have 70 minutes to play with 10 men.",
+          "question": "What's your immediate tactical instruction?",
+          "options": [
+            {"id": "A", "text": "Drop one midfielder and defend the lead"},
+            {"id": "B", "text": "Keep the same formation and work harder"},
+            {"id": "C", "text": "Go to a back 5 immediately"},
+            {"id": "D", "text": "Press higher to win the ball back quickly"}
+          ],
+          "correct": "A",
+          "explanation": "With 70 minutes to play down a man but ahead, tactical adjustment is crucial. Drop a midfielder to create more defensive stability while still maintaining some attacking threat. Balance is key for such a long period.",
+          "difficulty": "advanced",
+          "tags": ["red-card", "20th-minute", "man-down", "tactical-balance"]
+        }
+      ]
+    },
+    "space-creation": {
+      "description": "Overloads, width, vertical passing lanes, and positional play",
+      "questions": [
+        {
+          "id": "captain_space_001",
+          "scenario": "Your team is struggling to break through a compact midfield. The opposition is narrow and congested in the center.",
+          "question": "How should you organize your team to create space?",
+          "options": [
+            {"id": "A", "text": "Play more direct balls over the midfield"},
+            {"id": "B", "text": "Spread the play wider to stretch their shape"},
+            {"id": "C", "text": "Use more short, quick passes in tight spaces"},
+            {"id": "D", "text": "Bring more players into the congested area"}
+          ],
+          "correct": "B",
+          "explanation": "Against a compact, narrow defense, width is your best weapon. Stretch their defensive shape horizontally to create gaps and passing lanes in the center, then exploit those spaces.",
+          "difficulty": "intermediate",
+          "tags": ["compact-midfield", "width", "stretch-defense", "create-gaps"]
+        },
+        {
+          "id": "captain_space_002",
+          "scenario": "You notice your fullbacks keep getting isolated 2v1 when the opposition attacks down the flanks.",
+          "question": "What positional adjustment should you make?",
+          "options": [
+            {"id": "A", "text": "Tell the fullbacks to defend more aggressively"},
+            {"id": "B", "text": "Bring the midfield across to provide support"},
+            {"id": "C", "text": "Use center backs to cover the fullbacks"},
+            {"id": "D", "text": "Push the fullbacks higher up the pitch"}
+          ],
+          "correct": "B",
+          "explanation": "When fullbacks are getting isolated 2v1, the midfield needs to slide across to provide support. This creates numerical equality and prevents the overload from being effective.",
+          "difficulty": "intermediate",
+          "tags": ["2v1-overload", "fullback-support", "midfield-slide", "numerical-equality"]
+        },
+        {
+          "id": "captain_space_003",
+          "scenario": "Your team dominates possession but struggles to create vertical passes that break lines. Everything is sideways or backwards.",
+          "question": "What should you focus on to improve forward progression?",
+          "options": [
+            {"id": "A", "text": "Make longer passes to skip lines"},
+            {"id": "B", "text": "Create better movement to receive between lines"},
+            {"id": "C", "text": "Play quicker to catch defenders off-guard"},
+            {"id": "D", "text": "Use more dribbling to beat defenders"}
+          ],
+          "correct": "B",
+          "explanation": "To create vertical passing lanes, focus on movement to receive between lines. Players need to find pockets of space between defensive lines where they can turn and play forward.",
+          "difficulty": "advanced",
+          "tags": ["vertical-passes", "break-lines", "movement", "between-lines"]
+        },
+        {
+          "id": "captain_space_004",
+          "scenario": "Your striker is isolated and receiving no support. The midfield stays too deep and wide players don't come inside.",
+          "question": "How do you solve this attacking structure problem?",
+          "options": [
+            {"id": "A", "text": "Tell the striker to drop deeper to get involved"},
+            {"id": "B", "text": "Bring wide players inside and midfield forward"},
+            {"id": "C", "text": "Play more long balls to the striker"},
+            {"id": "D", "text": "Change to a two-striker system"}
+          ],
+          "correct": "B",
+          "explanation": "An isolated striker needs support players. Bring wide players inside and push midfield forward to create connections and give the striker passing options and support in the final third.",
+          "difficulty": "intermediate",
+          "tags": ["isolated-striker", "support-play", "attacking-structure", "connections"]
+        },
+        {
+          "id": "captain_space_005",
+          "scenario": "The opposition is pressing your team high up the pitch, but you notice they leave space in behind their midfield line.",
+          "question": "How should you exploit this space?",
+          "options": [
+            {"id": "A", "text": "Play direct balls over their midfield to the forwards"},
+            {"id": "B", "text": "Have midfielders make late runs into that space"},
+            {"id": "C", "text": "Switch play to avoid their press"},
+            {"id": "D", "text": "Both A and B"}
+          ],
+          "correct": "D",
+          "explanation": "When they press high and leave space behind their midfield, exploit it in multiple ways: direct balls over the top to forwards and late runs from midfielders into that space. Use both options to keep them guessing.",
+          "difficulty": "advanced",
+          "tags": ["high-press", "space-behind", "direct-balls", "late-runs"]
+        }
+      ]
+    },
+    "defensive-coordination": {
+      "description": "Offside trap, pressing triggers, covering, and defensive organization",
+      "questions": [
+        {
+          "id": "captain_defensive_001",
+          "scenario": "Your team is trying to play an offside trap, but your left-back keeps dropping deeper than the other defenders.",
+          "question": "How do you address this organizational issue?",
+          "options": [
+            {"id": "A", "text": "Tell him to push up immediately"},
+            {"id": "B", "text": "Abandon the offside trap"},
+            {"id": "C", "text": "Use constant communication to keep the line together"},
+            {"id": "D", "text": "Have the center backs drop to his level"}
+          ],
+          "correct": "C",
+          "explanation": "An offside trap requires perfect coordination and communication. As captain, provide constant verbal guidance to keep the defensive line moving together as a unit. Communication is key to timing and coordination.",
+          "difficulty": "advanced",
+          "tags": ["offside-trap", "defensive-line", "communication", "coordination"]
+        },
+        {
+          "id": "captain_defensive_002",
+          "scenario": "The opposition is about to take a quick free kick in your half. Your teammates are still arguing with the referee and not in position.",
+          "question": "What's your immediate priority?",
+          "options": [
+            {"id": "A", "text": "Continue the argument - it was a bad call"},
+            {"id": "B", "text": "Get your players organized and in position quickly"},
+            {"id": "C", "text": "Appeal to the referee for more time"},
+            {"id": "D", "text": "Stand near the ball to delay the kick"}
+          ],
+          "correct": "B",
+          "explanation": "When the opposition can take a quick free kick, immediately organize your players. Drop the arguments and get everyone in defensive positions quickly - goals conceded from quick free kicks often decide games.",
+          "difficulty": "beginner",
+          "tags": ["quick-free-kick", "organization", "immediate-priority", "defensive-positioning"]
+        },
+        {
+          "id": "captain_defensive_003",
+          "scenario": "Your center back is drawn out of position to press the ball. This creates a gap in your defensive line.",
+          "question": "How should the rest of the defense adjust?",
+          "options": [
+            {"id": "A", "text": "Stay in their original positions"},
+            {"id": "B", "text": "The other center back should cover across"},
+            {"id": "C", "text": "Midfield should drop back to fill the space"},
+            {"id": "D", "text": "Fullbacks should move inside to cover"}
+          ],
+          "correct": "B",
+          "explanation": "When one center back steps out, the other must cover across to maintain defensive balance. This prevents gaps and ensures you don't get outnumbered centrally. Defensive covering is fundamental to organization.",
+          "difficulty": "intermediate",
+          "tags": ["defensive-covering", "center-back-positioning", "defensive-balance", "gap-coverage"]
+        },
+        {
+          "id": "captain_defensive_004",
+          "scenario": "Your team is defending a corner, and you notice one of their players sneaking behind your defensive line at the back post.",
+          "question": "How do you handle this threat?",
+          "options": [
+            {"id": "A", "text": "Call for a defender to track him immediately"},
+            {"id": "B", "text": "Move there yourself to mark him"},
+            {"id": "C", "text": "Tell the goalkeeper to watch that area"},
+            {"id": "D", "text": "Ignore him and focus on the main threats"}
+          ],
+          "correct": "A",
+          "explanation": "A player sneaking to the back post is a major threat from corners. Immediately call for the nearest defender to track that run. Don't leave it to chance - someone must be responsible for marking that dangerous position.",
+          "difficulty": "intermediate",
+          "tags": ["corner-defense", "back-post-threat", "tracking-runs", "marking-responsibility"]
+        },
+        {
+          "id": "captain_defensive_005",
+          "scenario": "Your team is defending well as a unit, but individual players keep diving into tackles and leaving gaps when they miss.",
+          "question": "What defensive principle should you emphasize?",
+          "options": [
+            {"id": "A", "text": "Be more aggressive in tackles"},
+            {"id": "B", "text": "Stay on your feet and force them wide"},
+            {"id": "C", "text": "Only tackle as a last resort"},
+            {"id": "D", "text": "Double up on every attacker"}
+          ],
+          "correct": "B",
+          "explanation": "Emphasize staying on your feet and forcing attackers into less dangerous areas. Diving into tackles creates gaps when missed. Better to delay, stay balanced, and channel attackers away from goal.",
+          "difficulty": "advanced",
+          "tags": ["defensive-discipline", "stay-on-feet", "force-wide", "avoid-diving-in"]
+        }
+      ]
+    }
+  }
+}

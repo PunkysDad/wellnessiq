@@ -5,7 +5,7 @@ export default {
     owner: "jboo575",
     name: "WellnessIQ",
     slug: "wellnessiq-app", 
-    version: "1.0.0",
+    version: "1.1.0",
     orientation: "default",
     jsEngine: 'hermes',
     newArchEnabled: true,
@@ -22,7 +22,7 @@ export default {
       supportsTablet: false,
       bundleIdentifier: "com.justinbooth.wellnessiq",
       googleServicesFile: "./GoogleService-Info.plist",
-      runtimeVersion: "1.0.0",
+      runtimeVersion: "1.1.0",
       usesAppleSignIn: true,
       icon: "./assets/icon.png",
       infoPlist: {
