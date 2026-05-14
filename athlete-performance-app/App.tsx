@@ -366,14 +366,13 @@ export default function App() {
             setShowOnboarding(!existingUser || !existingUser.primarySport || (!existingUser.primaryPosition && existingUser.primarySport?.toUpperCase() !== 'GENERAL_FITNESS'));
             if (existingUser) {
               try {
-                // Temporarily disabled until entitlement fix is confirmed working
-                // await revenueCatService.syncTierIfChanged(
-                //   existingUser.id,
-                //   existingUser.subscriptionTier
-                // );
+                await revenueCatService.syncTierIfChanged(
+                  existingUser.id,
+                  existingUser.subscriptionTier
+                );
                 // Re-fetch profile in case tier was updated by sync
-                // const refreshed = await userService.checkUserExists(firebaseUser.uid);
-                // if (refreshed) setUserProfile(refreshed);
+                const refreshed = await userService.checkUserExists(firebaseUser.uid);
+                if (refreshed) setUserProfile(refreshed);
               } catch (syncErr) {
                 console.error('RevenueCat sync error on launch:', syncErr);
               }
@@ -396,26 +395,25 @@ export default function App() {
   }, []);
 
   // ── AppState foreground sync ─────────────────────────────────────────────
-  // Temporarily disabled until entitlement fix is confirmed working
   const appStateRef = useRef(AppState.currentState);
 
-  // useEffect(() => {
-  //   const subscription = AppState.addEventListener('change', async (nextAppState) => {
-  //     if (appStateRef.current.match(/inactive|background/) && nextAppState === 'active') {
-  //       if (user && userProfile?.id) {
-  //         try {
-  //           await revenueCatService.syncTierIfChanged(userProfile.id, userProfile.subscriptionTier);
-  //           const fresh = await userService.checkUserExists(user.uid);
-  //           if (fresh) setUserProfile(fresh);
-  //         } catch (err) {
-  //           console.error('Foreground tier sync error:', err);
-  //         }
-  //       }
-  //     }
-  //     appStateRef.current = nextAppState;
-  //   });
-  //   return () => subscription.remove();
-  // }, [user, userProfile]);
+  useEffect(() => {
+    const subscription = AppState.addEventListener('change', async (nextAppState) => {
+      if (appStateRef.current.match(/inactive|background/) && nextAppState === 'active') {
+        if (user && userProfile?.id) {
+          try {
+            await revenueCatService.syncTierIfChanged(userProfile.id, userProfile.subscriptionTier);
+            const fresh = await userService.checkUserExists(user.uid);
+            if (fresh) setUserProfile(fresh);
+          } catch (err) {
+            console.error('Foreground tier sync error:', err);
+          }
+        }
+      }
+      appStateRef.current = nextAppState;
+    });
+    return () => subscription.remove();
+  }, [user, userProfile]);
 
   const handleAuthSuccess = (authenticatedUser: any) => {
     console.log('Authentication successful for:', authenticatedUser.uid);
