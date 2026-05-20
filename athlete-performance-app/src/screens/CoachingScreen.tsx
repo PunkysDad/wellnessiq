@@ -683,7 +683,7 @@ export default function CoachingScreen() {
               style={styles.textInput}
               value={inputText}
               onChangeText={setInputText}
-              placeholder="Ask about your position, training, strategy..."
+              placeholder="Ask about training, fitness, stamina, etc."
               placeholderTextColor={appTheme.textMuted}
               multiline
               maxLength={500}

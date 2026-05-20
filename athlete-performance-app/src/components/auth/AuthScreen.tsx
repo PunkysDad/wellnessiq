@@ -16,8 +16,8 @@ import { getAuth, signInWithCredential, OAuthProvider, User } from 'firebase/aut
 // Firebase configuration from your app.config.js
 const firebaseConfig = {
   apiKey: "AIzaSyAOuvLI7rp5jPzLVgKk2ckh84UHgO8ZGb8",
-  projectId: "gameiq-37d8d",
-  storageBucket: "gameiq-37d8d.firebasestorage.app",
+  projectId: "wellnessiq-92112",
+  storageBucket: "wellnessiq-92112.firebasestorage.app",
 };
 
 // Initialize Firebase
@@ -89,16 +89,16 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onAuthSuccess }) => {
       <View style={styles.content}>
         {/* App Header */}
         <View style={styles.header}>
-          <Text style={styles.logo}>GameIQ</Text>
-          <Text style={styles.tagline}>Master YOUR Position</Text>
-          <Text style={styles.subtitle}>Train Smarter with AI</Text>
+          <Text style={styles.logo}>WellnessIQ</Text>
+          <Text style={styles.tagline}>Master YOUR Health & Wellness</Text>
+          <Text style={styles.subtitle}>AI-powered Fitness Coach</Text>
         </View>
 
         {/* Authentication Section */}
         <View style={styles.authSection}>
           <Text style={styles.welcomeText}>Welcome to WellnessIQ</Text>
           <Text style={styles.descriptionText}>
-            Sign in to access AI coaching and position-specific workout programs.
+            Sign in to access your AI-powered personal fitness coach.
           </Text>
 
           {/* Apple Sign-In Button */}
@@ -119,7 +119,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onAuthSuccess }) => {
 
           {/* Terms */}
           <Text style={styles.termsText}>
-            By continuing, you agree to GameIQ's Terms of Service and Privacy Policy
+            By continuing, you agree to WellnessIQ's Terms of Service and Privacy Policy
           </Text>
         </View>
       </View>

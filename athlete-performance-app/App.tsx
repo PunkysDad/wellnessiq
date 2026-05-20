@@ -178,8 +178,8 @@ const AuthScreen: React.FC<{ onAuthSuccess: (user: any) => void }> = ({ onAuthSu
       </SafeAreaView>
 
       <View style={styles.authHero}>
-        <Text style={styles.authHeroTitle}>Master YOUR Position</Text>
-        <Text style={styles.authHeroSubtitle}>AI-powered sports coaching & IQ training</Text>
+        <Text style={styles.authHeroTitle}>Master YOUR Health & Wellness</Text>
+        <Text style={styles.authHeroSubtitle}>AI-powered Fitness Coach</Text>
       </View>
 
       <BlurView intensity={20} tint="dark" style={styles.authCard}>
@@ -296,7 +296,7 @@ function RootStack() {
       <Stack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
       <Stack.Screen name="EditProfile" component={EditProfileScreen} options={{ title: 'Edit Profile', ...headerTheme }} />
       <Stack.Screen name="WorkoutDisplay" component={WorkoutDisplayScreen} options={{ headerShown: false }} />
-      <Stack.Screen name="WorkoutRequest" component={WorkoutRequestScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="WorkoutRequest" component={WorkoutRequestScreen} options={{ title: 'Generate Workout', ...headerTheme }} />
     </Stack.Navigator>
   );
 }
