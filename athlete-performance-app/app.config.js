@@ -39,9 +39,7 @@ export default {
       }
     },
     android: {
-      runtimeVersion: {
-        policy: "appVersion"
-      },
+      runtimeVersion: "1.1.0",
       adaptiveIcon: {
         foregroundImage: "./assets/icon.png",
         backgroundColor: "#FFFFFF"

@@ -174,6 +174,22 @@ class WorkoutController @Autowired constructor(
         return ResponseEntity.ok(dto)
     }
 
+    @DeleteMapping("/{id}")
+    fun deleteWorkout(
+        @PathVariable id: Long,
+        @RequestParam userId: Long
+    ): ResponseEntity<Void> {
+        return try {
+            workoutService.deleteWorkout(id, userId)
+            ResponseEntity.noContent().build()
+        } catch (e: IllegalArgumentException) {
+            ResponseEntity.notFound().build()
+        } catch (e: Exception) {
+            logger.error("Failed to delete workout id=$id for userId=$userId: ${e.message}", e)
+            ResponseEntity.badRequest().build()
+        }
+    }
+
     @PutMapping("/{workoutId}/exercises/video")
     fun updateExerciseVideo(
         @PathVariable workoutId: Long,

@@ -10,6 +10,9 @@ interface FormattedMessageProps {
 const FormattedMessage: React.FC<FormattedMessageProps> = ({ text, isUser }) => {
   const cleanText = (text: string): string => {
     return text
+      .split('\n')
+      .filter(line => !line.includes('[YES/NO]'))
+      .join('\n')
       .trim()
       .replace(/\n{3,}/g, '\n\n')
       .replace(/[ \t]+$/gm, '');

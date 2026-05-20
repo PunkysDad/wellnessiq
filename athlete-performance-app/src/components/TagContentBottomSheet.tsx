@@ -30,6 +30,7 @@ interface Props {
   visible: boolean;
   onClose: () => void;
   userId: number;
+  onDeleted?: () => void;
 }
 
 const TAG_COLORS = ['#007AFF', '#FF3B30', '#34C759', '#FF9500', '#AF52DE', '#FF2D55', '#5AC8FA'];
@@ -65,7 +66,7 @@ const parseWorkoutData = (content: any) => {
   return { title: '', description: '', exercises: [], rawText: null };
 };
 
-export default function TagContentBottomSheet({ item, visible, onClose, userId }: Props) {
+export default function TagContentBottomSheet({ item, visible, onClose, userId, onDeleted }: Props) {
   const slideAnim = useRef(new Animated.Value(SHEET_HEIGHT)).current;
   const [content, setContent] = useState<any>(null);
   const [loading, setLoading] = useState(false);
@@ -79,6 +80,7 @@ export default function TagContentBottomSheet({ item, visible, onClose, userId }
   // Title editing state
   const [displayTitle, setDisplayTitle] = useState('');
   const [savingTitle, setSavingTitle] = useState(false);
+  const [deleting, setDeleting] = useState(false);
 
   // Tag state
   const [existingTags, setExistingTags] = useState<TagResponse[]>([]);
@@ -222,6 +224,48 @@ export default function TagContentBottomSheet({ item, visible, onClose, userId }
     onClose();
   };
 
+  const handleDelete = () => {
+    if (!item) return;
+    const typeName = item.type === 'workout' ? 'Workout' : 'Chat';
+    Alert.alert(
+      `Delete ${typeName}?`,
+      `This will permanently delete this ${typeName.toLowerCase()} and cannot be undone.`,
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Delete',
+          style: 'destructive',
+          onPress: async () => {
+            setDeleting(true);
+            try {
+              let result;
+              if (item.type === 'workout') {
+                result = await apiService.deleteWorkout(item.id, userId);
+              } else {
+                const sessionId = content?.sessionId;
+                if (!sessionId) {
+                  Alert.alert('Error', 'Failed to delete. Please try again.');
+                  return;
+                }
+                result = await apiService.deleteChatSession(sessionId, userId);
+              }
+              if (result.success) {
+                handleClose();
+                onDeleted?.();
+              } else {
+                Alert.alert('Error', 'Failed to delete. Please try again.');
+              }
+            } catch {
+              Alert.alert('Error', 'Failed to delete. Please try again.');
+            } finally {
+              setDeleting(false);
+            }
+          },
+        },
+      ]
+    );
+  };
+
   const renderHeader = () => (
     <View style={styles.header}>
       <View style={styles.dragHandle} />
@@ -237,6 +281,17 @@ export default function TagContentBottomSheet({ item, visible, onClose, userId }
           </Text>
         </View>
         <View style={styles.headerActions}>
+          {deleting ? (
+            <ActivityIndicator size="small" color={appTheme.error} />
+          ) : (
+            <TouchableOpacity
+              onPress={handleDelete}
+              disabled={deleting}
+              hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+            >
+              <Icon name="delete-outline" size={22} color={appTheme.error} />
+            </TouchableOpacity>
+          )}
           <TouchableOpacity
             style={styles.headerEditButton}
             onPress={() => {

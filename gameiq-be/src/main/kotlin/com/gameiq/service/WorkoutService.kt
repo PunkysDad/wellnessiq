@@ -2,6 +2,7 @@ package com.gameiq.service
 
 import com.gameiq.entity.*
 import com.gameiq.repository.WorkoutPlanRepository
+import com.gameiq.repository.WorkoutPlanTagRepository
 import com.gameiq.repository.UserRepository
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.node.ObjectNode
@@ -14,8 +15,8 @@ import java.time.LocalDateTime
 @Transactional
 class WorkoutService(
     private val workoutPlanRepository: WorkoutPlanRepository,
+    private val workoutPlanTagRepository: WorkoutPlanTagRepository,
     private val userRepository: UserRepository
-    // Remove claudeService dependency - no longer needed
 ) {
 
     private val objectMapper: ObjectMapper = jacksonObjectMapper()
@@ -67,15 +68,13 @@ class WorkoutService(
         return workoutPlanRepository.save(updated)
     }
 
-    // Delete workout entirely
     fun deleteWorkout(workoutId: Long, userId: Long) {
         val workout = workoutPlanRepository.findById(workoutId).orElse(null)
-        
-        if (workout != null && workout.user.id == userId) {
-            workoutPlanRepository.delete(workout)
-        } else {
+        if (workout == null || workout.user.id != userId) {
             throw IllegalArgumentException("Workout not found or does not belong to user")
         }
+        workoutPlanTagRepository.deleteAll(workoutPlanTagRepository.findByWorkoutPlanId(workoutId))
+        workoutPlanRepository.delete(workout)
     }
     
     // Get only user's saved/bookmarked workouts

@@ -2,6 +2,7 @@ package com.gameiq.controller
 
 import com.gameiq.entity.*
 import com.gameiq.repository.ClaudeConversationRepository
+import com.gameiq.repository.ConversationTagRepository
 import com.gameiq.service.ClaudeService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -35,7 +36,8 @@ data class UpdateTitleRequest(val title: String)
 @CrossOrigin(origins = ["http://localhost:3000", "http://localhost:19006"])
 class ClaudeConversationController(
     private val claudeService: ClaudeService,
-    private val claudeConversationRepository: ClaudeConversationRepository
+    private val claudeConversationRepository: ClaudeConversationRepository,
+    private val conversationTagRepository: ConversationTagRepository
 ) {
 
     @PostMapping("/chat")
@@ -111,6 +113,20 @@ class ClaudeConversationController(
         val conversation = claudeConversationRepository.findById(conversationId)
             .orElse(null) ?: return ResponseEntity.notFound().build()
         return ResponseEntity.ok(conversation.toChatResponse())
+    }
+
+    @DeleteMapping("/session/{sessionId}")
+    fun deleteConversationsBySession(
+        @PathVariable sessionId: String,
+        @RequestParam userId: Long
+    ): ResponseEntity<Void> {
+        val conversations = claudeConversationRepository.findBySessionId(sessionId)
+            .filter { it.user.id == userId }
+        if (conversations.isEmpty()) return ResponseEntity.notFound().build()
+        val ids = conversations.map { it.id }
+        ids.forEach { id -> conversationTagRepository.deleteAll(conversationTagRepository.findByConversationId(id)) }
+        claudeConversationRepository.deleteAll(conversations)
+        return ResponseEntity.noContent().build()
     }
 
     @GetMapping("/session/{sessionId}")

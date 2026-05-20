@@ -463,7 +463,6 @@ export default function WorkoutRequestScreen() {
         )}
 
         {/* Time Available */}
-        {!hasChatContext && (
         <BlurView intensity={15} tint="dark" style={[cs.glassCardOrb, errors.timeAvailable && styles.errorCard]}>
           <View style={cs.cardPadding}>
             <Text style={cs.cardHeading}>Time Available (minutes)</Text>
@@ -500,7 +499,6 @@ export default function WorkoutRequestScreen() {
             </View>
           </View>
         </BlurView>
-        )}
 
         {renderEquipmentSection()}
 

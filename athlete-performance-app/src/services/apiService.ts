@@ -59,6 +59,9 @@ async function apiCall<T>(
       throw new Error(errorMessage);
     }
 
+    if (response.status === 204) {
+      return { data: {} as T, success: true };
+    }
     const data = await response.json();
     return { data, success: true };
   } catch (error) {
@@ -165,6 +168,14 @@ export const apiService = {
 
   async getWorkoutById(workoutId: number): Promise<ApiResponse<any>> {
     return apiCall(`/api/v1/workouts/${workoutId}`);
+  },
+
+  async deleteWorkout(workoutId: number, userId: number): Promise<ApiResponse<void>> {
+    return apiCall(`/api/v1/workouts/${workoutId}?userId=${userId}`, { method: 'DELETE' });
+  },
+
+  async deleteChatSession(sessionId: string, userId: number): Promise<ApiResponse<void>> {
+    return apiCall(`/api/v1/conversations/session/${sessionId}?userId=${userId}`, { method: 'DELETE' });
   },
 
   async updateConversationTitle(conversationId: number, title: string): Promise<ApiResponse<any>> {

@@ -467,6 +467,20 @@ export default function HomeScreen() {
         visible={sheetVisible}
         onClose={() => setSheetVisible(false)}
         userId={currentUserId ?? 0}
+        onDeleted={() => {
+          if (selectedItem) {
+            setTagsWithItems(prev =>
+              prev
+                .map(tag => ({
+                  ...tag,
+                  items: tag.items.filter(
+                    i => !(i.id === selectedItem.id && i.type === selectedItem.type)
+                  ),
+                }))
+                .filter(tag => tag.items.length > 0)
+            );
+          }
+        }}
       />
       <HistoryListModal
         visible={historyModalVisible}
